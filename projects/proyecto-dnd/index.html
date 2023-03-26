@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Icon -->
+    <title>DnD Project</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles-dnd.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="HTML DnD Project v1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="https://freesvg.org/img/dragon_ampersand.png" />
+    <meta property="og:description"
+        content="Mi segundo documento HTML. Intento hacer un sitio web divertido, con juegos y otros elementos varios relacionados con Calabozos y Dragones.">
+</head>
+
+<body>
+
+    <header>
+        <!-- Bootstrap Script -->
+        <aside>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+                integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+                crossorigin="anonymous"></script>
+        </aside>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- NavBar Home Icon -->
+                <a class="navbar-brand" href="#" title="D&D Project">
+                    <img class="navbar-img" alt="Site IMG" src="img/round-snake-gray.png" width="50px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- NavBar Content (Excluding icon) -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Right Side of NavBar (Customization, etc) -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Personalization</button>
+                                        <ul class="dropdown-menu dropdown-menu">
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Alignment
+                                                </a></li>
+                                                <li><a class="dropdown-item disabled"
+                                                    href="#">Background</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Stats
+                                                </a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Ancestry
+                                                </a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Class</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Spells</a></li>
+                                                    <li><a class="dropdown-item disabled"
+                                                        href="#">Spell Type</a></li>
+                                                        <li><a class="dropdown-item disabled"
+                                                            href="#">Equipment</a></li>
+                                                            <li><a class="dropdown-item disabled"
+                                                                href="#">Animal Companion / Familiar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Quest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Bestiary</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            More
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu">
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Mood of the Room</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Ruleset</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">Map</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">FAQ</a></li>
+                                            <li><a class="dropdown-item disabled"
+                                                    href="#">About Me</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Right Side of the NavBar (LogIn, SignIn, Contact, Language, etc) -->
+                    <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">SignIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../CV.html#log-in">Contact Me</a>
+                        </li>
+                    </ul>
+                    <!-- Language Choice -->
+                    <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-3">
+                        <li class="nav-item">
+                            <button><img title="Idioma Español" alt="Spain Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                    height="25px" /></button> |
+                            <button><img title="English Language" alt="UK Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                    height="25px" /></button>
+                        </li>
+                    </ul>
+                    <!-- NavBar Search -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    </form>
+                    <!-- Light Mode / Dark Mode -->
+                    <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-2">
+                        <li title="Light Mode" class="nav-item">Light<br>Mode</li> .
+                        <li title="Dark Mode" class="nav-item">Dark<br>Mode</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- title -->
+        <br>
+        <h1>D&D Project</h1>
+        <br>
+    </header>
+
+
+    <br>
+
+    <main>
+        Un projecto HTML relacionado con Calabozos y Dragones. Intento hacer un sitio web divertido, con juegos y otros
+        elementos varios.
+    </main>
+
+
+
+    <!-- content starts here -->
+    <section>
+        <h2>Home Page</h2>
+        <p>[Login to continue]</p>
+        <br>
+    </section>
+
+    <br>
+    <hr><br>
+
+    <section>
+        <!-- table with pages design goal  (because I don't have anything else at the moment) -->
+        <table>
+            <caption><u>Design Goals</u></caption>
+            <tr>
+                <th>Page Name</th>
+                <th>Page Img</th>
+                <th>Page Name</th>
+                <th>Page Img</th>
+                <th>Page Name</th>
+                <th>Page Img</th>
+            <tr>
+                <td>
+                    <a href="login.html">Login</a> 
+                </td>
+                <td>
+                    <img title="Login Page Img" alt="Login Page Img" src="design-goals/login.png"
+                        height="200px" />
+                </td>
+                <td>
+                    Animal Companion <br>(Index)
+                </td>
+                <td>
+                    <img title="Animal Companion (Index) Page Img" alt="Animal Companion (Index) Img"
+                        src="design-goals/animal-index.png" height="200px" />
+                </td>
+                <td>
+                    Equipment
+                </td>
+                <td>
+                    <img title="Equipment Page Img" src="img/ARMOR_pathfinder.jpg" height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="signin.html">SignIn</a>
+                </td>
+                <td>
+                    <img title="SignIn Page Img" alt="SignIn Page Img" src="design-goals/signin.png"
+                        height="200px" />
+                </td>
+                <td>
+                    Animal Companion <br>(Current)
+                </td>
+                <td>
+                    <img title="Animal Companion (Current) Img" alt="Animal Companion (Index) Img"
+                        src="design-goals/animal-current.png" height="200px" />
+                </td>
+                <td>
+                    Background
+                </td>
+                <td>
+                    <img title="D&D Past Page Img" src="img/DnD Base Background.jpg" height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contact / <br>About Me
+                </td>
+                <td>
+                    <img title="Contact Page Img"
+                        src="https://images01.nicepagecdn.com/page/54/47/website-template-preview-544730.jpg"
+                        height="150px" />
+                </td>
+                <td>
+                    Alignment
+                </td>
+                <td>
+                    <img title="Alignment Page Img" src="img/DnD Base Alignment.jpg" height="200px" />
+                </td>
+                <td>
+                    Ancestry
+                </td>
+                <td>
+                    <img title="Ancestry / Race Page Img" src="img/DnD Base Nine Races.jpg"
+                        height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Spells
+                </td>
+                <td>
+                    <img title="Spells Page Img" src="design-goals/spells.png" height="200px" />
+                </td>
+                <td>
+                    Magic Type
+                </td>
+                <td>
+                    <img title="Schools of Magic Page Img" src="img/DnD Base Schools of Magic.jpeg"
+                        height="200px" />
+                </td>
+                <td>
+                    Class
+                </td>
+                <td>
+                    <img title="Class Page Img" src="img/DnD Base Class.jpg" height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Test
+                </td>
+                <td>
+                    <img title="Class / Ancestry Test Page Img" src="design-goals/test.png"
+                        height="200px" />
+                </td>
+                <td>
+                    Customization
+                </td>
+                <td>
+                    <img title="Customization Page Img" src="design-goals/customization.png"
+                        height="200px" />
+                </td>
+                <td>
+                    Quest<br>/ Adventure /<br>Mission
+                </td>
+                <td>
+                    <img title="Quest / Adventure / Mission Page Img"
+                        src="design-goals/generate-quest.png" height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dungeon Crawler
+                </td>
+                <td>
+                    <img title="Game (Dungeon Crawler) Page Img"
+                        src="design-goals/game-dungeon-crawler.png" height="200px" />
+                </td>
+                <td>
+                    Arena
+                </td>
+                <td>
+                    <img title="Game (Arena) Page Img" src="design-goals/game-arena.png" height="200px" />
+                </td>
+                <td>
+                    Ruleset
+                </td>
+                <td>
+                    <img title="Ruleset Page Img" src="design-goals/ruleset.png" height="200px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+                <td>
+                    <h6>Page</h6>
+                </td>
+                <td>
+                    <h6>img</h6>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    
+
+    <!-- Footer with a snake img -->
+    <footer>
+        <hr>
+        <img alt="snaky snek Image left" src="img/snaky-snek-flip.png" height="100px" width="400px" />
+        &lt;| Ruleset | Contact |&gt;
+        <img alt="snaky snek Image right" src="img/snaky-snek.png" height="100px" width="400px" />
+    </footer>
+
+</body>
+
+</html>

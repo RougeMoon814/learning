@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Icon -->
+    <title>Homepage v3</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="homepage3.css" />
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="Document HTML Try v1" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="img/coffee.png" />
+    <meta property="og:description" content="Mi primer documento HTML">
+</head>
+
+<body>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <header id="top">
+            <!-- Back to Top^ Button -->
+            <div id="screen-size-top-tag"></div>
+            <div class="float-r" styles="border-margin 50%; position: fixed;">
+                <a role="button" href="#top"><button id="go-top">^</button></a>
+            </div>
+            <br>
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-xl bg-body-tertiary m-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html" title="JC"><img class="navbar-img" alt="Site IMG"
+                            src="img/flat-paw-print.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-outline-info dropdown-toggle mx-1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Concepts
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu">
+                                    <li><a class="dropdown-item" href="../index.html#box-model">Box Model</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#box-sizing">Box Sizing</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#bem-method">BEM Method</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#elements">Elementos</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#links">Links</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#paths">Paths</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#text-change">Tipografia</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../index.html#tabla">Tabla</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#lista">Lista</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#cursor">Cursor</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#form-test">Formulario</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../index.html#object-fit">Object Fit</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#object-position">Obj Position</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../index.html#overflow">Overflow</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#float">Float</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#position">Position</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#display">Display</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../index.html#transform">Transform</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#transition">Transition</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#animation">Animation</a></li>
+                                    <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mx-1">
+                                <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Responsive
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="../responsiveness.html">Responsiveness</a></li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#view-port">Viewport</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#mobile-first">Mobile
+                                            First</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#screen-grid">Screen
+                                            Grid</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#media-queries">Media
+                                            Queries</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">~ Layout ~
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#flex-box">Flexbox</a></li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#grid-layout">Grid
+                                            Layout</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">~ Frameworks ~
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#boot-strap">Bootstrap</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#tail-wind">Tailwind</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#w3-css">W3.CSS</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">~PreProcessors~
+                                    </li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#sass">SASS</a></li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#less">LESS</a></li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#stylus">STYLUS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mx-1">
+                                <button class="btn dropdown-toggle btn-outline-warning text-secondary"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Multimedia
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="../multimedia.html#Img">Image</a></li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#Audio">Audio</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">~ Video ~
+                                    </li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#Video">Video</a></li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#YouTube">Video (YouTube)</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#Vimeo">Video (Vimeo)</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">Responsive Media
+                                    </li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#responsive-images">Responsive
+                                            Image</a></li>
+                                    <li><a class="dropdown-item" href="../multimedia.html#responsive-video">Responsive
+                                            Video</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mx-1">
+                                <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Projects
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                                    <li><a class="dropdown-item" href="form-examples.html">Forms</a></li>
+                                    <li><a class="dropdown-item" href="landing-product-page.html">Landing Page</a></li>
+                                    <li><a class="dropdown-item" href="restaurant-site.html">Restaurant</a></li>
+                                    <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="../responsiveness.html#grid-example">Art
+                                            Gallery</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="parallax-site.html">Parallax</a></li>
+                                    <li><a class="dropdown-item disabled" href="search-bar.html">Search</a></li>
+                                    <li><a class="dropdown-item" href="homepage.html">Homepage</a></li>
+                                    <li><a class="dropdown-item" href="tribute-site.html">Tribute</a></li>
+                                    <li><a class="dropdown-item" href="music-store.html">Music Store</a></li>
+                                    <li><a class="dropdown-item" href="events-site.html">Events</a></li>
+                                    <li><a class="dropdown-item" href="CV.html">CV / Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="wiki-docs.html">Docs / Wiki</a></li>
+                                    <li><a class="dropdown-item" href="calculator.html">Calculator</a></li>
+                                    <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                                    <li><a class="dropdown-item" href="proyecto-dnd/index.html"
+                                            title="Projecto de prueba relacionado con DnD. &nbsp; Para volver a este proyecto solo hay que poner 'Contact Me'.">D&D
+                                            Project</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">More</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex navbar-nav mx-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="CV.html#log-in">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#sign-in">SignIn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CV.html#log-in">Contact Me</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <button><img title="Idioma Español" alt="Spain Flag Img"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                        height="25px" /></button> |
+                                <button><img title="English Language" alt="UK Flag Img"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                        height="25px" /></button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <h3>Homepage v3</h3>
+
+        </header>
+
+        <div class="header">
+            <h1>My Website</h1>
+            <p>A website created by me.</p>
+        </div>
+
+        <div class="navbar">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#" class="right">Link</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+                <br>
+
+                <h2>Side Menu</h2>
+                <div class="sidebar">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <div class="sidebar-dropdown2">Dropdown <b><small>v</small></b>
+                        <ul class="link-block">
+                            <li><a href="../index.html">Option 1</a></li>
+                            <li><a href="menus-x-y.html#top" target="_self">Top</a></li>
+                            <li><a href="#top">Option 3</a></li>
+                            <li><a href="#">Other (Opt 5)</a></li>
+                        </ul>
+                    </div>
+                    <select class="sidebar-dropdown" >
+                        <option value option hidden selected>Choose</option>
+                        <optgroup label="Dropdown Group">
+                        <option><a href="#">Option 1</a></option>
+                        <option><a href="#">Option 2</a></option>
+                    </optgroup>
+                    <option><a href="#">Other (Opt 3)</a></option>
+                    </select>
+                </div>
+                <br>
+                
+                <h3>More Text</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+            
+        </div>
+            <div class="main">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+
+        <br><br><br>
+
+    <footer id="bottom">
+        <br>
+        Copyright 2022
+        <section class="float-r">
+            <a href="mailto:email@email.com">Contacto</a> | <a href="#top">Ir arriba ^</a>
+        </section>
+        <br><br>
+    </footer>
+    </body>
+
+</html>

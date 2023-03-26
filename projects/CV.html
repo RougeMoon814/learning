@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Try</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="Document HTML Try v1" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="img/coffee.png" />
+    <meta property="og:description" content="Mi primer documento HTML">
+</head>
+
+<body>
+    <header id="top">
+        <!-- Back to Top^ Button -->
+        <div id="screen-size-top-tag"></div>
+        <div class="float-r" styles="border-margin 50%; position: fixed;">
+            <a role="button" href="#top"><button id="go-top">^</button></a>
+        </div>
+        <br>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary m-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" title="JC"><img class="navbar-img" alt="Site IMG"
+                        src="../img/flat-paw-print.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-outline-info dropdown-toggle mx-1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Concepts
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html#box-model">Box Model</a></li>
+                                <li><a class="dropdown-item" href="../index.html#box-sizing">Box Sizing</a></li>
+                                <li><a class="dropdown-item" href="../index.html#bem-method">BEM Method</a></li>
+                                <li><a class="dropdown-item" href="../index.html#elements">Elementos</a></li>
+                                <li><a class="dropdown-item" href="../index.html#links">Links</a></li>
+                                <li><a class="dropdown-item" href="../index.html#paths">Paths</a></li>
+                                <li><a class="dropdown-item" href="../index.html#text-change">Tipografia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#tabla">Tabla</a></li>
+                                <li><a class="dropdown-item" href="../index.html#lista">Lista</a></li>
+                                <li><a class="dropdown-item" href="../index.html#cursor">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../index.html#form-test">Formulario</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#object-fit">Object Fit</a></li>
+                                <li><a class="dropdown-item" href="../index.html#object-position">Obj Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#overflow">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../index.html#float">Float</a></li>
+                                <li><a class="dropdown-item" href="../index.html#position">Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#display">Display</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#transform">Transform</a></li>
+                                <li><a class="dropdown-item" href="../index.html#transition">Transition</a></li>
+                                <li><a class="dropdown-item" href="../index.html#animation">Animation</a></li>
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Responsive
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../responsiveness.html">Responsiveness</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#view-port">Viewport</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#mobile-first">Mobile First</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#screen-grid">Screen Grid</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#media-queries">Media
+                                        Queries</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Layout ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#flex-box">Flexbox</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-layout">Grid Layout</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Frameworks ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#boot-strap">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#tail-wind">Tailwind</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#w3-css">W3.CSS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~PreProcessors~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#sass">SASS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#less">LESS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#stylus">STYLUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn dropdown-toggle btn-outline-warning text-secondary"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Multimedia
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../multimedia.html#Img">Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Audio">Audio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Video ~
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Video">Video</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#YouTube">Video (YouTube)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Vimeo">Video (Vimeo)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">Responsive Media
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-images">Responsive
+                                        Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-video">Responsive
+                                        Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                                <li><a class="dropdown-item" href="form-examples.html">Forms</a></li>
+                                <li><a class="dropdown-item" href="landing-product-page.html">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="restaurant-site.html">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-example">Art Gallery</a>
+                                </li>
+                                <li><a class="dropdown-item" href="parallax-site.html">Parallax</a></li>
+                                <li><a class="dropdown-item" href="search-bar.html">Search</a></li>
+                                <li><a class="dropdown-item" href="homepage.html">Homepage</a></li>
+                                <li><a class="dropdown-item" href="tribute-site.html">Tribute</a></li>
+                                <li><a class="dropdown-item" href="music-store.html">Music Store</a></li>
+                                <li><a class="dropdown-item" href="events-site.html">Events</a></li>
+                                <li><a class="dropdown-item" href="CV.html">CV / Portfolio</a></li>
+                                <li><a class="dropdown-item" href="wiki-docs.html">Docs / Wiki</a></li>
+                                <li><a class="dropdown-item" href="calculator.html">Calculator</a></li>
+                                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                                <li><a class="dropdown-item" href="proyecto-dnd/index.html"
+                                        title="Projecto de prueba relacionado con DnD. &nbsp; Para volver a este proyecto solo hay que poner 'Contact Me'.">D&D
+                                        Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">More</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex navbar-nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#sign-in">SignIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Contact Me</a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <button><img title="Idioma Español" alt="Spain Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                    height="25px" /></button> |
+                            <button><img title="English Language" alt="UK Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                    height="25px" /></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+
+    <br>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    (4 Columns)
+
+                    <h2 class="title-cv">Julieta CV</h2>
+                    <h3 class="subtitle-cv">Student</h3>
+
+                    <br>
+
+                    <h4 class="subtitle-cv"><img class="cv-img" alt="CV IMG"
+                            src="../img/double-face-mask.png"></h3>
+
+                        <br>
+
+                        <ul>
+                            <h6>Personal:</h6>
+                            <li>Fecha de Nacimiento: dd/mm/aaaa</li>
+                            <li>E-mail: <adress>email@email.com</adress>
+                            </li>
+                            <li>Telefono: <adress>00+ 00 0000-0000</adress>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <ul>
+                            <h6>Habilidades:</h6>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Premiere</li>
+                            <li>Toon Boom Animation: Harmony</li>
+                            <li>Maya Autodesk</li>
+                        </ul>
+
+
+
+                        <br>
+
+                        <ul>
+                            <h6>Idiomas:</h6>
+                            <li>Español Avanzado</li>
+                            <li>Ingles Avanzado</li>
+                        </ul>
+                </div>
+
+                <div class="col-8">
+                    (8 Columns)
+                    <br><br><br><br>
+
+                    <br>
+
+                    <ul>
+                        <h6>PERFIL PROFESIONAL</h6>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi esse, nam hic unde harum
+                            molestias, quidem placeat voluptates impedit ducimus soluta facere omnis, exercitationem
+                            saepe quae ex accusamus iure temporibus.
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <ul>
+                        <h6>Experiencia Laboral:</h6>
+                        <li> Vivamus tempus rhoncus lorem, eu porta lacus consequat sit amet.</li>
+                        <li>Morbi euismod, ante id aliquet cursus, augue lectus consectetur ex, vel tincidunt eros
+                            lectus non lacus.</li>
+                        <li>Aliquam varius odio eget erat mattis, non porta purus pretium.</li>
+                    </ul>
+
+                    <br>
+
+                    <ul>
+                        <h6>Estudios:</h6>
+                        <li>Aliquam varius odio eget erat mattis, non porta purus pretium.</li>
+                        <li> Vivamus tempus rhoncus lorem, eu porta lacus consequat sit amet.</li>
+                        <li>Morbi euismod, ante id aliquet cursus, augue lectus consectetur ex, vel tincidunt eros
+                            lectus non lacus.</li>
+                    </ul>
+
+                    <br>
+
+                    <ul>
+                        <h6>Certficados:</h6>
+                        <li>Etiam molestie ligula neque.</li>
+                        <li>In et diam vulputate, vestibulum augue sit amet, accumsan elit.</li>
+                    </ul>
+
+                    <br>
+
+                    <ul>
+                        <h6>Software:</h6>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Premiere</li>
+                        <li>Toon Boom Animation: Harmony</li>
+                        <li>Maya Autodesk</li>
+                    </ul>
+
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="text-center">
+        <hr>
+        Volver | Contacto: <adress>1111-1111</adress> / <address>email@email.com</address>
+
+        <br>
+        <hr><br>
+
+        <span id="log-in">
+
+            <h5>Contact Me:</h5>
+        </span>
+        (form)
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores delectus magnam laborum tenetur
+            enim neque atque, quo vel. Cupiditate aut voluptate dignissimos officia harum. Neque sapiente illo officiis
+            vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum corrupti labore hic nam animi
+            iure quos sint, ex voluptas autem error reiciendis minima odit at totam officia, provident voluptatum! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur et omnis sequi natus, necessitatibus ut
+            molestias molestiae optio porro culpa, ex ipsum repellat saepe debitis suscipit vero accusantium quidem.
+        </p>
+        <br>
+        <!-- Contact Me Form (First Column) -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-5">
+                    (col5.1)
+                    <h1 class="text-center mb-3">Contact Me</h1>
+                    <form action="" method="post">
+                        <div class="row mb-1">
+                            <div class="col">
+                                <label class="form-label">First Name</label>
+                                <input type="text" name="firstName" class="form-control" placeholder="First name"
+                                    aria-label="First name" required>
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                                    aria-label="Last name" required>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email@email.com"
+                                    aria-label="Email" required disabled>
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Phone (optional)</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone"
+                                    aria-label="Phone">
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label>
+                                        Preferred method of Contact:
+                                    </label>
+                                    <label for="contact-phone" class="form-label" name="contact-method" value="Phone">
+                                        <input type="checkbox" id="contact-phone" value="phone">Phone
+                                    </label>
+                                    <label for="contact-email" class="form-label" name="contact-method" value="Email">
+                                        <input type="checkbox" id="contact-email" value="email">Email
+                                    </label>
+                                    <label for="contact-other" class="form-label" name="contact-method" value="Other">
+                                        <input type="checkbox" id="contact-other" value="other" disabled>Other
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Happiness w/ Service (Radial Input) -->
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label for="service"> How was the service?</label>
+                                    <br>
+                                    <label for="service">Good :)</label>
+                                    <input type="radio" id="Good" name="service" value="Good Sevice">
+                                    <span> | </span>
+                                    <label for="service">Med :/</label>
+                                    <input type="radio" id="Med" name="service" value="Med Sevice">
+                                    <span> | </span>
+                                    <label for="service">Bad :(</label>
+                                    <input type="radio" id="Bad" name="service" value="Bad Sevice">
+                                </div>
+                            </div>
+
+                            <!-- Subject of Contact Message (Dropdown Input) -->
+                            <div class="row mb-2">
+                                <label class="form-label">Subject</label>
+                                <select class="form-control" name="Subject" aria-label="Subject">
+                                    <option value="question">
+                                        I have a Question
+                                    </option>
+                                    <option value="hire">
+                                        I want to hire you
+                                    </option>
+                                    <option alue="3">
+                                        Option 3
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Contact Message (Textarea Input) -->
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label class="form-label">Message</label>
+                                    <textarea cols="10" rows="5" type="text-area" name="message" class="form-control" placeholder="Sample Message..."
+                                        aria-label="Message" required>Sample Message</textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    </form>
+
+                    <br>
+                    <hr><br>
+
+                    <button class="button" title="this is just a button with an image, doesn't do anything"><img src="img/flat-paw-print.png" width="20"> Order <br>(button)</button>
+
+                    <button class="button" title="button with type submit. Does it's job but allows for customization" type="submit">Place Order Now<br>(Submit button)</button>
+
+                    <input title="submit inputs are limited. Better to use a button with type submit instead" type="submit" 
+                    value="Submit Order Now (Submit Input)">
+                </div>
+            </div>
+
+            <!-- Login Form (Second Column) -->
+            <div class="col-5">
+                (col5.2)
+                <div class="form-signin bg-dark login-form">
+                    <form action="" metod="post">
+                        <img class="mb-4" src="https://www.dropbox.com/s/zgbbayj1iqd9fjf/CF_Mark.jpg?raw=1" alt=""
+                            width="72">
+                        <h1 class="h3 mb-3 fw-normal quiero-blanco">Please sign in</h1>
+
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                name="email-contact">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+
+                        <br>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                name="password-contact">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
+                        <p class="mt-5 mb-3">&copy; 2017-2021</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

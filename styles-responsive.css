@@ -1,0 +1,503 @@
+/* CSS for first Try with Flexbox
+Les't hope this responsive things goes better than last time */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode', 'Calibri', 'Trebuchet MS', 'Arial', 'Verdana', sans-serif;
+}
+
+nav {
+    border: 2px ridge;
+    margin: 5px 100px;
+    font-weight: bold;
+    padding: 2px;
+     /* text-align: center;  */
+    background-color: lightgrey;
+}
+
+.navbar-img {
+    width: 50px;
+    height: auto;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 8px;
+    right: 6px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid rgb(20, 30, 48);
+    padding: 1px 2px 0;
+    border-radius: 50%;
+    color:#000;
+    background-color: powderblue;
+    text-decoration: none;
+}
+#go-top:hover {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(20, 30, 48);
+    color: powderblue;
+    border: 2px solid cornflowerblue;
+    font-weight: bolder;
+}
+
+header, footer {
+    background-color:rgb(20, 30, 48);
+    Color: white;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+section h5 {
+    text-decoration: underline;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+div h6 {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.container-float {
+    margin: 0 50px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+    background:lightgoldenrodyellow;
+}
+.container-float img {
+    width: 400px;
+    float: right;
+    margin: 1px 1px;
+    }
+
+.flex-container1 {
+    display: flex;
+}
+.flex-item1 {
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flex-container2 {
+    display: flex;
+}
+.flex-item2 {
+    display: flex;
+    background-color: midnightblue;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item3 {
+    display: flex;
+    background-color:cyan;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+.flex-container4 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 30vh;
+    align-items: flex-start;
+}
+.flex-item4 {
+    display: flex;
+    background-color:darkblue;
+    color: white;
+    height: 70px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.flex-container5 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 30vh;
+    align-content: flex-start;
+} 
+.flex-item5 {
+    display: flex;
+    background-color:mediumaquamarine;
+    height: 70px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.flex-container6 {
+    display: flex;
+}
+.flex-item6 {
+    background-color: rgb(61, 77, 77);
+    color:white;
+    min-width: 150px;
+    margin: 5px;
+    text-align: center;
+    height: 80px;
+    flex-grow: 1;
+}
+
+.flex-container7 {
+    display: flex;
+}
+.flex-item7 {
+    background-color:antiquewhite;
+    min-width: 150px;
+    margin: 5px;
+    text-align: center;
+    height: 80px;
+}
+.grow-individual {
+    flex-grow: 1;
+}
+
+.flex-container8 {
+    display: flex;
+}
+.flex-item8 {
+    background-color:rgb(108, 74, 133);
+    color: white;
+    min-width: 150px;
+    margin: 5px;
+    text-align: center;
+    height: 80px;
+}
+.grow-individual {
+    flex-grow: 1;
+}
+.grow-double {
+    flex-grow: 2;
+}
+
+/* Practica con Flex (Formulario) */
+.practica-flex {
+    background: black;
+}
+
+
+.flex-container9 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #444;
+    margin: 50px auto;
+    padding: 20px;
+    border: 10px solid hsl(200, 30%, 50%);
+    outline: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 2;
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 3px solid cadetblue;
+    background: transparent;
+    color: white;
+}
+.form__input:focus {
+    background: linear-gradient(to bottom, transparent, #0000004d);
+    outline: none;
+    border-bottom: 3px solid lightskyblue;
+}
+.form__input[type="submit"] {
+    background-color: hsl(182, 25%, 40%);
+    border-bottom: none;
+    padding: 15px;
+}
+.form__input[type="submit"]:hover {
+    background-color: hsl(182, 25%, 35%);
+}
+.form__input[type="submit"]:active {
+    background: linear-gradient(to bottom, hsl(182, 25%, 40%),hsl(182, 25%, 35%));
+}
+.form__input[type="submit"]:focus {
+    background-color: hsl(182, 25%, 40%);
+}
+
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.form-img img {
+    width: 60%;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    margin: auto;
+    order: 1;
+}
+
+/* GRID LAYOUT */
+
+/* Por defecto crea una sola columna con multiples filas. 
+Hay que agregarle tambien
+grid-template-rows y grid-template-columns 
+*/
+.grids {
+    padding: 20px;
+    background: radial-gradient(circle, white, lightgray);
+}
+
+.grid-container1 {
+    display: grid;
+    border: 5px solid black;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 1fr;
+    background-color: hsl(30, 100%, 99%);
+}
+.grid-item1 {
+    border: 1px solid black;
+}
+
+.grid-item1:first-child {
+    background: gray;
+    grid-column: 1 / 3; /* Ocupa de la linea 1 hasta la linea 3 */
+    grid-row: 1 / 3;
+}
+/* En vez de usar .item:first-child {} o .item:second-child {} es recomendable usar 
+.item:nth-child(2) {}
+*/
+.grid-item1:nth-child(2) {
+    background:dimgray;
+    grid-column: 3 / 5;
+    grid-row: 1 /3;
+}
+
+.grid-container2 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 10px;
+}
+.grid-item2 {
+    border: 1px solid black;
+}
+
+.grid-container3 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+}
+.grid-item3 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.grid-container4 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+}
+.grid-item4 {
+    border: 1px solid black;
+    background-color: bisque;
+}
+
+.grid-container5 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+}
+.grid-item5 {
+    border: 1px solid black;
+    background-color:lightcoral;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.grid-container6 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    height: 400px;
+    justify-content:end;
+    align-content:end;
+    justify-items: center;
+    align-items: center;
+}
+.grid-item6 {
+    border: 1px solid black;
+    background-color:limegreen;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid-container7 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    height: 400px;
+    justify-items: center;
+    align-items: center;
+}
+.grid-item7 {
+    border: 1px solid black;
+    background-color:darkorchid;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+.grid-item7:first-child {
+    align-self: start;
+    justify-self: start;
+    background: hsl(290, 100%, 30%);
+}
+.grid-item7:nth-child(3) {
+    align-self: start;
+    justify-self: end;
+    background: hsl(290, 100%, 30%);
+}
+.grid-item7:nth-child(5) {
+    background: hsl(270, 60%, 65%);
+}
+.grid-item7:nth-child(7) {
+    align-self: end;
+    justify-self: start;
+    background: hsl(290, 100%, 30%);
+}
+.grid-item7:last-child {
+    align-self: end;
+    justify-self: end;
+    background: hsl(290, 100%, 30%);
+}
+
+.grid-container8 {
+    display: grid;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+}
+.grid-item8 {
+    border: 1px solid black;
+    background-color:darkblue;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.grid-item8:first-child {
+    border: 1px solid black;
+    background-color: blue;
+    order: 3;
+}
+
+/* Practica 1 con Grid (Galeria) */
+.practica-grid-1 {
+    display: grid;
+}
+.practica-grid-1 .grid {
+    display: grid;
+    grid-auto-flow: row; /* it's the default value (can be omitted) */
+    grid-gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.practica-grid-1 .horizontal {
+    grid-auto-flow: column;
+}
+.practica-grid-1 .grid img:first-child {
+    grid-area: span 3 / span 3;
+}
+.practica-grid-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Practica 2 con Grid (Galeria) */
+.grid-example2 {
+    padding: 10px;
+    display: flex;
+}
+.practica-grid-2 {
+    display: grid;
+    grid-template-rows: auto-fill;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto-fill para que sea dinamica */
+    grid-gap: 10px;
+
+}
+.practica-grid-2 img {
+    width: 100%;
+    height: 200px; /* Le pondría un height fijo porque 100% no lo toma. Pero con height fijo queda horrible. Las imagenes quedan en columna. */
+    object-fit: cover; /* Sin esto las imagenes se me deforman */
+    
+}
+.practica-grid-2 img:first-child {
+    grid-column: 1 / span 2;
+}
+.practica-grid-2 img:nth-child(8) {
+    grid-column: 4 / span 2;
+}
+.practica-grid-2 img:nth-child(11) {
+    grid-column: 3 / span 2;
+}
+
+
+

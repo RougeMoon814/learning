@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Icon -->
+    <title>DnD Project</title>
+    <link rel=”icon” type=”image/x-icon” href=”favicon.ico”>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/proyecto-dnd/styles-dnd.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="HTML DnD Project v1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="https://freesvg.org/img/dragon_ampersand.png" />
+    <meta property="og:description"
+        content="Mi segundo documento HTML. Intento hacer un sitio web divertido, con juegos y otros elementos varios relacionados con Calabozos y Dragones.">
+</head>
+
+<body>
+
+    <header>
+    <!-- Bootstrap Script -->
+    <aside>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+    </aside>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/proyecto-dnd/index.html" title="D&D Project">
+                <img class="navbar-img" alt="Site IMG" src="/proyecto-dnd/img/round-snake-gray.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" aria-current="page" href="/change.html">Personalization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="../cv-try.html">Quest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="../Grid View Example.html">Test</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        More
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu">
+                                        <li><a class="dropdown-item disabled" href="../Multimedia HTML.html#Img">Mood of the Room</a></li>
+                                        <li><a class="dropdown-item disabled" href="../Multimedia HTML.html#Audio">Ruleset</a></li>
+                                        <li><a class="dropdown-item disabled" href="../Multimedia HTML.html#Video">Map</a></li>
+                                        <li><a class="dropdown-item disabled" href="../Multimedia HTML.html#YouTube">FAQ</a></li>
+                                        <li><a class="dropdown-item disabled" href="../Multimedia HTML.html#Vimeo">About Me</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv-try.html#log-in">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#sign-in">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv-try.html#log-in">Contact Me</a>
+                    </li>
+                </ul>
+                    <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-3">
+                    <li title="Light Mode" class="nav-item">☼</li> . 
+                    <li title="Dark Mode" class="nav-item">◙</li>
+                </ul>
+                <ul class="d-flex navbar-nav mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <button><img title="Idioma Español" alt="Spain Flag Img"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                height="25px" /></button> |
+                        <button><img title="English Language" alt="UK Flag Img"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                height="25px" /></button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+        <!-- title -->
+        <br>
+        <h1>D&D Project</h1>
+        <br>
+    </header>
+
+<iframe
+    src="/proyecto-dnd/index-inside.html"
+    name="targetframe"
+    allowTransparency="true"
+    scrolling="0"
+    frameborder="1"
+>
+</iframe>
+
+    <!-- Footer with a snake img -->
+    <footer>
+        <hr>
+        <img alt="snaky snek Image left" src="/proyecto-dnd/img/snaky-snek-flip.png" height="100px" width="400px" />
+        &lt;| Ruleset | Contact |&gt;
+        <img alt="snaky snek Image right" src="/proyecto-dnd/img/snaky-snek.png" height="100px" width="400px" />
+    </footer>
+
+</body>
+
+</html>

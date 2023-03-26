@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Custom made Sidebar*/
+.sidebar, .sidebar a, .sidebar-dropdown, .sidebar-dropdown2 {
+    width: 100%;
+    display: block;
+}
+.sidebar {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+.sidebar .sidebar-dropdown {
+    display: block;
+    background: lightgray;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    text-align: start;
+}
+.sidebar a, .sidebar .sidebar-dropdown a {
+    display: block;
+    background: lightgray;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+.sidebar a:hover, .sidebar .sidebar-dropdown:hover {
+    background: #aaa;
+    color: aliceblue;
+}
+.sidebar .sidebar-dropdown:focus {
+    outline: none;
+}
+.sidebar ul {
+    /*list-style: none;  alternatively I could use list-style-type. No dots on list */
+    list-style-position: inside; /* Without this dots overlap with menu. With this dots get "inside" the space of the list and stop interfering with the sidebar. */
+}
+
+.sidebar /* , .sidebar-dropdown */ {
+    width: 100%; /* Set a width you like */
+    margin-right: 10px; /* gap between menu and "main" text */
+    left: 0; /* Menu struck to left wall of viewport */
+    float: left; /* Menu "floats". Allows other text (main) to wrap around it. */
+}
+.sidebar .sidebar-dropdown2 {
+    padding: 12px 20px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.sidebar .sidebar-dropdown2:hover, .sidebar .sidebar-dropdown2:active {
+    outline: 2px solid #ccc;
+    outline-offset: -8px;
+    border-radius: 1px;
+    padding-bottom: 1px;
+}
+.sidebar .sidebar-dropdown2 li {
+    list-style-type: none;
+    list-style-position: outside;
+}
+.sidebar .sidebar-dropdown2 li:first-child {
+    margin-top: 15px;
+}
+/* .sidebar .sidebar-dropdown li:last-child {
+    margin-bottom: 15px;
+} */
+.sidebar .sidebar-dropdown2 .link-block li {
+    display: none;
+}
+.sidebar .sidebar-dropdown2:hover .link-block li, .sidebar .sidebar-dropdown2:active .link-block li {
+    display: block;
+
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

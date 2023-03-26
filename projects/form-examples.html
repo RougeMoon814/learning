@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header id="top">
+        <!-- Back to Top^ Button -->
+        <div id="screen-size-top-tag"></div>
+        <div class="float-r" styles="border-margin 50%; position: fixed;">
+            <a role="button" href="#top"><button id="go-top">^</button></a>
+        </div>
+        <br>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary m-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" title="JC"><img class="navbar-img" alt="Site IMG"
+                        src="img/flat-paw-print.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-outline-info dropdown-toggle mx-1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Concepts
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html#box-model">Box Model</a></li>
+                                <li><a class="dropdown-item" href="../index.html#box-sizing">Box Sizing</a></li>
+                                <li><a class="dropdown-item" href="../index.html#bem-method">BEM Method</a></li>
+                                <li><a class="dropdown-item" href="../index.html#elements">Elementos</a></li>
+                                <li><a class="dropdown-item" href="../index.html#links">Links</a></li>
+                                <li><a class="dropdown-item" href="../index.html#paths">Paths</a></li>
+                                <li><a class="dropdown-item" href="../index.html#text-change">Tipografia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#tabla">Tabla</a></li>
+                                <li><a class="dropdown-item" href="../index.html#lista">Lista</a></li>
+                                <li><a class="dropdown-item" href="../index.html#cursor">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../index.html#form-test">Formulario</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#object-fit">Object Fit</a></li>
+                                <li><a class="dropdown-item" href="../index.html#object-position">Obj Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#overflow">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../index.html#float">Float</a></li>
+                                <li><a class="dropdown-item" href="../index.html#position">Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#display">Display</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#transform">Transform</a></li>
+                                <li><a class="dropdown-item" href="../index.html#transition">Transition</a></li>
+                                <li><a class="dropdown-item" href="../index.html#animation">Animation</a></li>
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Responsive
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../responsiveness.html">Responsiveness</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#view-port">Viewport</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#mobile-first">Mobile First</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#screen-grid">Screen Grid</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#media-queries">Media
+                                        Queries</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Layout ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#flex-box">Flexbox</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-layout">Grid Layout</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Frameworks ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#boot-strap">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#tail-wind">Tailwind</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#w3-css">W3.CSS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~PreProcessors~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#sass">SASS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#less">LESS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#stylus">STYLUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn dropdown-toggle btn-outline-warning text-secondary"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Multimedia
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../multimedia.html#Img">Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Audio">Audio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Video ~
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Video">Video</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#YouTube">Video (YouTube)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Vimeo">Video (Vimeo)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">Responsive Media
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-images">Responsive
+                                        Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-video">Responsive
+                                        Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                                <li><a class="dropdown-item" href="form-examples.html">Forms</a></li>
+                                <li><a class="dropdown-item" href="landing-product-page.html">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="restaurant-site.html">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-example">Art Gallery</a>
+                                </li>
+                                <li><a class="dropdown-item" href="parallax-site.html">Parallax</a></li>
+                                <li><a class="dropdown-item" href="search-bar.html">Search</a></li>
+                                <li><a class="dropdown-item" href="homepage.html">Homepage</a></li>
+                                <li><a class="dropdown-item" href="tribute-site.html">Tribute</a></li>
+                                <li><a class="dropdown-item" href="music-store.html">Music Store</a></li>
+                                <li><a class="dropdown-item" href="events-site.html">Events</a></li>
+                                <li><a class="dropdown-item" href="CV.html">CV / Portfolio</a></li>
+                                <li><a class="dropdown-item" href="wiki-docs.html">Docs / Wiki</a></li>
+                                <li><a class="dropdown-item" href="calculator.html">Calculator</a></li>
+                                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                                <li><a class="dropdown-item" href="proyecto-dnd/index.html"
+                                        title="Projecto de prueba relacionado con DnD. &nbsp; Para volver a este proyecto solo hay que poner 'Contact Me'.">D&D
+                                        Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">More</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex navbar-nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#sign-in">SignIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Contact Me</a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <button><img title="Idioma Español" alt="Spain Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                    height="25px" /></button> |
+                            <button><img title="English Language" alt="UK Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                    height="25px" /></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h3>Formularios, Inputs & Toogles</h3>
+        <br>
+    </header>
+    <br>
+    <section> <!--Formulario 1 -->
+        <ul>
+            <li>for: el id del input al que acompaña la etiqueta. Conexion entre el input (id) y el label.</li>
+            <li>Usually the label gones after the input, to be affected by it.</li>
+        </ul>
+        <br>
+        <div id="form1" class="sign-in">
+            <br>
+            <h4>Formulario 1</h4>
+            <br>
+            <ul>
+                <li>En este caso seleccione uno de los input con CSS y le di otro color de fondo.</li>
+            </ul>
+            <br>
+            <!-- En action le especificamos a donde vamos a mandar la info del formulario, normalmente sería nuestros servidores pero para ver lo que mandamos tambien podemos usar http://httpbin.org/get -->
+            <form action="http://httpbin.org/get" informacion_cargada="" method="get">
+                <!-- El metodo "post" es ligeramente mas seguro que el metodo "get", mientras que con el primero igual puedo ver lo que escribi utilizando DevTools, el metodo get es peor (en terminos de seguridad), porque pone nuestros inputs (como contraseñas que hayamos escrito) en la url. -->
+                <fieldset>
+                    <!-- Si tengo un formulario muy grannde puedo separarlo en secciones utilizando fieldset. Dentro de este elemento especificamos otro elemento "legend", similar a un caption -->
+                    <legend>
+                        Personal Info
+                    </legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="username" autofocus>
+                <!-- Es considerado buena práctica utilizar el atributo "for" en el label (que conectará con el id del input) -->
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ortega">
+                <br><br><br>
+                <!-- Un input puede ir dentro de un label. Generalmente se ubican los label despues del input para que pueda ser modificado/ estilizado por este [input]  -->
+                <label for="email">Email:
+                    <!-- El autocomplete necesita on / off -->
+                    <input type="email" id="email" name="email" placeholder="email@email.com" autocomplete="on" required>
+                </label>
+                <!-- El ID lo podemos utilizar para identificar ese elemento desde JavaScript u otra parte del HTML, por ejemplo. -->
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="****" required>
+                <br><br><br>
+                <!-- Los input radio deben tener el mismo "name" para fomar un grupo (y que sea cliqueable solo uno) -->
+                <label for="genero">Genero:</label><br>
+                <input type="radio" id="Femenino" name="genero" value="F">Femenino
+                <span> | </span>
+                <input type="radio" id="Masculino" name="genero" value="M">Masculino
+                <span> | </span>
+                <input type="radio" id="Otro" name="genero" value="O" checked>Otro
+                <!-- Se utiliza "checked" para que el input inicie marcado por default, el usuario luego puede desmarcarlo o modificarlo. 
+                Alternativamente, se puede utilizar "autofocus" para que el input inicie "enfocado", y podamos empezar a escribir inmediatamente en él (usualmente en el primer campo [de texto] de un formulario). -->
+                <br><br>
+                <label for="phone">Tel:
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
+                </label>
+                <label for="age">Age:
+                    <input type="number" id="age" name="age" placeholder="??" value="25" min="15" max="100" step="5">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Other Data</legend>
+                <br>
+                <label for="coffee">Favourite Coffee: 
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Some Coffees">
+                        <option value="latte">Latte</option>
+                        <option value="expresso">Expresso</option>
+                        <!-- Doesn't need to show always the first one, we can change it with "selected" -->
+                        <option value="black" selected>Black</option>
+                    </optgroup>
+                    <optgroup label="Blatanly wrong choice">
+                        <option value="not-coffee">This is not a Coffee</option>
+                    </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <!-- "multiple" me permite selccionar mas de una opcion usando ctrl + click (cmd + click en Mac) -->
+                <label for="favcolor">Fav Color: </label>
+                    <select name="favcolor" id="favcolor" size="6" multiple>
+                        <optgroup label="These are not colors">
+                            <option value="black">Black</option>
+                            <option value="gray" selected>Gray</option>
+                            <option value="white">White</option>
+                        </optgroup>
+                        <optgroup label="Actual Colors">
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="orange">Orange</option>
+                            <option value="red">Red</option>
+                            <option value="pink">Pink</option>
+                            <option value="purple">Purple</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <!-- <label for="altfavcolor">Alternative favourite color:</label>
+                        <input type="text" name="altfavcolor" id="altfavcolor" list="color-list">
+                        <data-list id="color-list" name="color-list">
+                            <option value="black">
+                            <option value="gray">
+                            <option value="white">
+                            <option value="blue">
+                            <option value="green">
+                            <option value="yellow">
+                            <option value="orange">
+                            <option value="red">
+                            <option value="pink">
+                            <option value="purple">
+                        </data-list>
+                <br> (Not working) -->
+                <label for="TOS">Acepto terminos:</label>
+                <input type="checkbox" id="TOS" name="TOS">
+                <span> | </span>
+                <label for="meter">Medidor de felicidad:</label>
+                <input type="range" id="meter" name="meter" min="0" max="50" step="10" value="20">
+                <span> | </span>
+                <label for="color">Color Preferido:</label>
+                <input type="color" id="color" name="color">
+                <br><br><br>
+                <label for="add">Agregar Icono:</label>
+                <input type="file" id="add" name="add">
+                <br><br><br>
+                <!-- En vez de utilizar un input de tipo Submit (que no es estilizable), conviene utilizar un button de tipo submit -->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Clear">
+                <br>
+                <!-- formaction me permite enviar el formulario a otra direccion de la especificada al inicdio del formulario -->
+                <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Send to other place (with post)</button>
+
+            </fieldset>
+            </form>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div> <!-- Formulario 2 -->
+            <h4>Formulario 2</h4>
+            <br>
+            <div class="form-signin bg-dark login-form text-center">
+                <form action="" metod="post">
+                    <img class="mb-4" src="https://www.dropbox.com/s/zgbbayj1iqd9fjf/CF_Mark.jpg?raw=1" alt=""
+                        width="72">
+                    <h1 class="h3 mb-3 fw-normal quiero-blanco">Please sign in</h1>
+
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            name="email-contact">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+
+                    <br>
+
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                            name="password-contact">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3">&copy; 2017-2021</p>
+                </form>
+            </div>
+        </div>
+
+        <br><hr><br>
+
+        <div> <!-- Formulario 3 -->
+            <h4>Formulario 3</h4>
+            <br>
+                <div class="container text-center row">
+                        <h1 class="text-center mb-3">Contact Me</h1>
+                        <form action="" method="post">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" name="firstName" class="form-control" placeholder="First name"
+                                        aria-label="First name" required>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                                        aria-label="Last name" required>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Email@email.com"
+                                        aria-label="Email" required disabled>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label">Phone (optional)</label>
+                                    <input type="text" name="phone" class="form-control" placeholder="Phone"
+                                        aria-label="Phone">
+                                </div>
+    
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <label>
+                                            Preferred method of Contact:
+                                        </label>
+                                        <label for="contact-phone" class="form-label" name="contact-method" value="Phone">
+                                            <input type="checkbox" id="contact-phone" value="phone">Phone
+                                        </label>
+                                        <label for="contact-email" class="form-label" name="contact-method" value="Email">
+                                            <input type="checkbox" id="contact-email" value="email">Email
+                                        </label>
+                                        <label for="contact-other" class="form-label" name="contact-method" value="Other">
+                                            <input type="checkbox" id="contact-other" value="other" disabled>Other
+                                        </label>
+                                    </div>
+                                </div>
+    
+                                <!-- Happiness w/ Service (Radial Input) -->
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <label for="service"> How was the service?</label>
+                                        <br>
+                                        <label for="service">Good :)</label>
+                                        <input type="radio" id="Good" name="service" value="Good Sevice">
+                                        <span> | </span>
+                                        <label for="service">Med :/</label>
+                                        <input type="radio" id="Med" name="service" value="Med Sevice">
+                                        <span> | </span>
+                                        <label for="service">Bad :(</label>
+                                        <input type="radio" id="Bad" name="service" value="Bad Sevice">
+                                    </div>
+                                </div>
+    
+                                <!-- Subject of Contact Message (Dropdown Input) -->
+                                <div class="row mb-2">
+                                    <label class="form-label">Subject</label>
+                                    <select class="form-control" name="Subject" aria-label="Subject">
+                                        <option value="question">
+                                            I have a Question
+                                        </option>
+                                        <option value="hire">
+                                            I want to hire you
+                                        </option>
+                                        <option alue="3">
+                                            Option 3
+                                        </option>
+                                    </select>
+                                </div>
+    
+                                <!-- Contact Message (Textarea Input) -->
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <label class="form-label">Message</label>
+                                        <!-- En un text area no usamos "value" para poner contenido (Ej: "Sample Message") sino que lo ponemos entre los tags de <textarea>. El placeholder funciona igual que con los otros inputs. -->
+                                        <textarea cols="10" rows="5" type="text-area" name="message" class="form-control" placeholder="Sample Message..."
+                                            aria-label="Message" required>Sample Message</textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </form>
+    
+                        <br>
+                        <hr><br>
+    
+                        <button class="button" title="this is just a button with an image, doesn't do anything"><img src="../img/flat-paw-print.png" width="20"> Order <br>(button)</button>
+    
+                        <button class="button" title="button with type submit. Does it's job but allows for customization" type="submit">Place Order Now<br>(Submit button)</button>
+    
+                        <input title="submit inputs are limited. Better to use a button with type submit instead" type="submit" 
+                        value="Submit Order Now (Submit Input)">
+                </div>
+        </div>
+
+        <br><hr><br>
+        <div> <!--Formulario 4 -->
+            <h4>Formulario 4</h4> (Formulario con Flex)
+            <ul><li><a href="../responsiveness.html#flex-example">Otro Formulario</a></li></ul>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <footer class="footer" id="bottom">
+        <br>
+        Copyright 2022
+        <section class="float-r">
+            <a href="mailto:email@email.com">Contacto</a> | <a href="#top">Ir arriba ^</a>
+        </section>
+        <br><br>
+    </footer>
+</body>
+
+</html>

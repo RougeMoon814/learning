@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Icon -->
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles-2.css" />
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="Document HTML Try v1" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="img/coffee.png" />
+    <meta property="og:description" content="Mi primer documento HTML">
+</head>
+
+<body>
+    <div class="content">
+        <!-- Navbar (sit on top) -->
+        <header id="top">
+            <!-- Back to Top^ Button -->
+            <div id="screen-size-top-tag"></div>
+            <div class="float-r" styles="border-margin 50%; position: fixed;">
+                <a role="button" href="#top"><button id="go-top">↑</button></a>
+            </div>
+            
+            <!-- NavBar -->
+            
+        </header>
+        
+        <div class="grid-container">
+            <div class="header">
+                <h2>About</h2>
+            </div>
+            
+            <div class="navbar-top">
+                <a href="index.html">
+                    <div id="logo">
+                        <img title="Homepage" src="img/plants-and-animals.png" alt="LOGO">
+                        <img title="Homepage" src="img/temptation.png" alt="LOGO">
+                </div></a>
+
+                <div class="link-block">
+                    <a href="#shop">Shop</a>
+                    <a href="#art">Art</a>
+                    <a href="wiki-docs.html">Docs</a>
+                    <a href="#games">Games</a>
+                    <a href="about-main.html">About</a>
+                </div>
+                <!-- <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                </div> -->
+            </div>
+            <br>
+            <div class="left">
+                <h5>Sidebar</h5>
+                <div class="link-block">
+                    <a href="about-main.html">About this Page</a>
+                    <a href="about-main.html">About Me</a>
+                    <a href="about-CV.html">CV</a>
+                    <a href="#" disabled>Tribute</a>
+                    <a href="#" disabled>Contact Me</a>
+                </div>
+                <hr>
+                <img width="200px" src="img/Under Construction.png" alt="under construction">
+
+            </div>
+            <div class="middle">
+                <!-- <h4>About</h4> -->
+                <br>
+                <div class="about">
+                    <div id="about-column-left">
+                        <h4>Acerca de esta página</h4>
+                        <br>
+                        <details>
+                            <summary>Q: Why is this a sample question?</summary>
+                            A: Because this is a sample answer.
+                        </details>
+                        <br>
+                        <details>
+                            <summary>Q: Why is this page so bad?</summary>
+                            A: Well excuuuse me, It's a work in progress. I do what I can.
+                        </details>
+                        <br>
+                        <details>
+                            <summary>Q: There's a Copyright at the bottom. Do you actually have any copyright?</summary>
+                            A: Nope! Also the copyright is there because I thought it was cool, I'll take it off later.
+                        </details>
+                        <br>
+                        <details>
+                            <summary>Q: Why isn't there anymore questions?</summary>
+                            A: Because this is more of a cosmetic thing and I couldn't think of any.
+                        </details>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="about-column-right">
+                        <h4>Sobre Mi</h4>
+                        <img src="img/goblin.png" alt="goblin" />
+                        I'm an anxiety-ridden goblinoid who tries to make things right. I'm also constantly studying and searching for new experiences. <br><br>
+                        <h4><a href="about-CV.html">Here's my CV</a></h4>
+                    </div>
+                </div>
+                
+                
+
+                <br><br>
+                <hr width="50%" style="margin:0 auto;">
+                <br>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="right">
+                <h5>Featured Content</h5>
+                <img src="img/double-face-mask.png" alt="mask">
+                <img src="img/shrug.png" alt="char shrug">
+                <img src="img/surprised.png" alt="char surprised">
+                
+            </div>
+
+            <!-- FOOTER -->
+            <footer id="bottom" class="footer">
+                <ul style="list-style-type: none;">
+                    <li>© Copyright 2023</li>
+                    <li>Homepage<br>(Footer)</li>
+                    <li> Top <a href="#top"><small><button><b>^</b></small></button></a></li>
+                </ul>
+            </footer>
+    </div>
+</div>
+</body>
+
+</html>

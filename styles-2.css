@@ -1,0 +1,598 @@
+/* VARIABLES */
+/* This varible controls the (min) height of the page. As I don't want that to randomly change when we select a Sidebar Dropdown link. May have to be modified in the future if a longer dopdown is made */
+:root {
+    --page-height: 1750px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+    /* The Background color on the sides. Should be a neutral color (or maybe a subtle background image). */
+    
+    overflow-x: hidden;
+    /* There's a weird bar of the html in the right and I can't quite extend the body. Best I could do was hide the overflow (not both, otherwise It doesn't let me scroll lol) */
+}
+
+/* All page is inside this container so background color can be appreciated */
+.content {
+    margin: 0.2rem 0.4rem;
+    /* The margin on the actual page content (allows the background color to be visible) */
+    border-radius: 10px;
+}
+.content .cv {
+    margin: 0.2rem 0.4rem;
+    /* The margin on the actual page content (allows the background color to be visible) */
+    border-radius: 10px;
+}
+.content .cv .left {
+    margin-left: 8rem;
+}
+.content .cv .middle {
+    margin-right: 8rem;
+}
+
+a, link {
+    color: black;
+    text-decoration: none;
+}
+/* Standard links (will be used for disabled bc I overrided the normal ones with a:hover:not([disabled]) ) */
+a:hover, link:hover {
+    background-color: inherit;
+    color: rgba(100, 100, 100, 0.7);
+    cursor: default;
+    text-shadow: 0 1px 5px gray;
+}
+a:hover:not([disabled]), link:hover:not([disabled]) {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    cursor: pointer;
+}
+/* Headings */
+h1, h2, h3, h4 {
+    text-align: center;
+}
+h5, h6 {
+    display: inline-block;
+}
+h5 {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+/* Style the header */
+.header {
+    grid-area: header;
+    background-color: #ffacac;
+    padding: 1rem;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* Button go to top */
+#go-top {
+    position: fixed;
+    bottom: 12px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: .5px .5px black;
+    border: 2px solid rgb(20, 30, 48);
+    padding: 0 1px 0;
+    border-radius: 50%;
+    color:#000;
+    background: linear-gradient(to bottom, powderblue, cornflowerblue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+#go-top:hover {
+    width: 30px;
+    height: 30px;
+    color: powderblue;
+    border: 2px solid cornflowerblue;
+    box-shadow: .1rem .1rem 0.3rem 0 midnightblue; /* sombra derecha, sombra abajo, blureado, borde (gral cero), color (con tranparencia) */
+    font-weight: 900;
+    background: linear-gradient(to bottom, hsl(219, 41%, 30%), black);
+}
+#go-top:active {
+    width: 30px;
+    height: 30px;
+    color: powderblue;
+    border: 2px solid powderblue;
+    /* background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); */
+    box-shadow: .1rem .1rem 0.3rem 0 cornflowerblue; /* sombra derecha, sombra abajo, blureado, borde (gral cero), color (con tranparencia) */
+    font-weight: bolder;
+    background: linear-gradient(to bottom, black, hsl(219, 41%, 30%));
+}
+/* Navbar */
+.navbar-top {
+    grid-area: navbar-top;
+    background-color: #0b5d3762;
+    margin-bottom: 10px;
+    padding: 0;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    justify-content: space-between;
+}
+/* LOGO del Navbar */
+.navbar-top img {
+    /* justify-self: center; */
+    width: 80px;
+    /* padding: 5px; */
+    /* margin: 5px; */
+    border-radius: 50%;
+    border: 5px solid #0b5d3762;
+    position: absolute;
+    float: left;
+    margin-top: -40px;
+    margin-left: 10px;
+    margin-right: 500px;
+    transition: border .1s ease, width .1 ease;
+}
+/* El logo tiene 2 imagenes. Voy a cambiarlas cuando el usuario haga hover */
+.navbar-top #logo img:first-child {
+    visibility: visible;
+}
+.navbar-top #logo img:nth-child(2) {
+    visibility: hidden;
+}
+/* LOGO del Navbar (Hover) */
+/* .navbar-top a:hover img {
+    border: 5px solid #0b5d37;
+    background-color: #ffffff62;
+} */
+.navbar-top #logo:hover img:first-child, .navbar-top #logo:active img:first-child {
+    visibility: hidden;
+}
+.navbar-top #logo:hover img:nth-child(2), .navbar-top #logo:active img:nth-child(2) {
+    visibility: visible;
+    border: 5px solid #0b5d37;
+    background-color: #ffffff62;
+}
+/* Links del Navbar */
+.navbar-top .link-block {
+    /* background-color: #0b5d3762; */
+    padding: 0;
+    /* height: 100%; */
+    font-weight: bold;
+    margin: 0;
+    transition: background-color .5s ease;
+    text-align: center;
+    display: flex;
+}
+/* Links del Navbar (Links) */
+.navbar-top .link-block a {
+    color: black;
+    text-decoration: none;
+    width: 50%;
+    padding: 20px 20px;
+}
+.navbar-top .link-block a:hover {
+    background-color: #0b5d37;
+    color: honeydew;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    
+    grid-template-areas:
+        'header header header header header header'
+        'navbar-top navbar-top navbar-top navbar-top navbar-top navbar-top'
+        'left middle middle middle middle right'
+        'footer footer footer footer footer footer';
+    column-gap: 10px; 
+    grid-template-columns: 220px repeat(4, 1fr) 190px;
+    /* height: 100%;
+    margin-bottom: 0; */
+}
+.grid-container.cv {
+    display: grid;
+    
+    grid-template-areas:
+        'header header header header header header'
+        'navbar-top navbar-top navbar-top navbar-top navbar-top navbar-top'
+        'left middle middle middle middle middle'
+        'footer footer footer footer footer footer';
+    column-gap: 10px; 
+    grid-template-columns: 350px repeat(4, 1fr) 190px;
+    /* height: 100%;
+    margin-bottom: 0; */
+}
+.left,
+.middle,
+.right {
+    padding: 10px;
+    border-radius: 4px;
+    height: 100%; /* Necesario. Sino la caja con mas contenio escala pero las otras (left, right) no. */
+    min-height: auto;
+    
+}
+.left.docs,
+.middle.docs,
+.right.docs {
+    min-height: var(--page-height);
+    /* Solo la pagina de los docs necesita ser tanlarga para que entre todo el dropdown de JavaScript */
+}
+/* Sidebars 
+.left,
+.right {
+}
+*/
+/* Style the left column */
+.left {
+    background-color:#bbb;
+    grid-area: left;
+    /* width: 210px; */
+}
+/* Sidebar links */
+.left a {
+    display: block;
+    padding: 5px;
+}
+/* Not disabled links */
+.left a:hover:not([disabled]), .left link:hover:not([disabled]) {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+}
+/* Sidebar dropdown */
+.left .sidebar-dropdown {
+    padding: 10px 5px 2px;
+}
+.left .sidebar-dropdown:hover, .left .sidebar-dropdown:active {
+    outline: 2px solid #ccc;
+    border-radius: 1px;
+    padding-bottom: 1px;
+}
+.left .sidebar-dropdown li {
+    list-style-type: none;
+    margin-left: -25px;
+}
+.left .sidebar-dropdown .link-block li {
+    display: none;
+}
+.left .sidebar-dropdown:hover .link-block li, .left .sidebar-dropdown:active .link-block li {
+    display: block;
+}
+
+/* Style the middle column */
+.middle {
+    background-color: whitesmoke;
+    grid-area: middle;
+    /* max-width: 45%; */
+}
+
+/* Style the right column */
+.right {
+    background-color:#aaa;
+    grid-area: right;
+    /* width: 210px; */
+    text-align: right;
+}
+
+.right img {
+    position: static;
+    display: block;
+    object-fit: scale-down;
+    width: 100%;
+    border-radius: 5%;
+    margin: 10px 0;
+    transition: width 0.8s ease;
+    float: none;
+    right:0;
+}
+.right img:hover, .right img:active {
+    object-fit: cover;
+    float: right;
+    position: relative;
+    right: 0;
+    display: block;
+    width: 40vw;
+    border-radius: 10%;
+    margin: 8px 0;
+}
+/* Style the footer */
+.footer {
+    grid-area: footer;
+    background-color: #9099ff;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+/* WIKI - DOCUMENTATION */
+/* Box-model img */
+#structure img {
+    /* max-height: 250px; */
+    max-width: 100%;
+    width: 600px;
+    object-fit: contain;
+    max-height: 65vh;
+}
+.about {
+    display:flex;
+    justify-content: space-evenly;
+}
+.about #about-column-left {
+    width: 40%;
+}
+.about #about-column-right {
+    width: 40%;
+}
+.about #about-column-right img {
+    display: block; 
+    text-align: center; 
+    border-radius: 40%;
+    width: 60%;
+    margin: -8% 20%;
+    
+}
+/* Shaded Button 
+right-shadow down-shadow blur
+*/
+.shaded {
+    width: 8rem;
+    padding: 1rem;
+    /* margin: 2rem; */
+    border: 2px solid rgb(0, 0, 0);
+    /* transform: rotate(30deg); */
+    outline: 0 auto;
+    border-radius: 8px;
+    /* border-collapse: separate; */
+
+}
+.shaded a {
+    text-decoration: none;
+}
+.shaded a:hover {
+    text-decoration: underline;
+}
+.shaded:hover {
+    background: linear-gradient(to bottom, whitesmoke, gainsboro);
+    transition: box-shadow 0.3s ease;
+    /* Si quisieramos animar todas las propiedades del elemento reeemplazo "box-shadow" por all */
+    box-shadow: 0 .1rem 0.4rem 0 rgba(126, 0, 0, 0.3);
+    /* sombra der, sombra abajo, blureado, borde (gral cero), color (con tranparencia) */
+    cursor: pointer;
+}
+.shaded:active {
+    background: linear-gradient(to bottom, gainsboro, whitesmoke);
+    /* Si quisieramos animar todas las propiedades del elemento reeemplazo "box-shadow" por all */
+    box-shadow: 0 .1rem 0.4rem 0 rgba(126, 0, 0, 0.3);
+    /* sombra der, sombra abajo, blureado, borde (gral cero), color (con tranparencia) */
+    cursor: pointer;
+}
+.shaded a:hover:not([disabled]), .shaded link:hover:not([disabled]) {
+    background-color: none;
+}
+.gradient-mask {
+    font-weight: bold;
+}
+
+.gradient-mask:hover {
+    font-weight: bol5d;
+    background: linear-gradient(to right,  mediumpurple, cornflowerblue, deepskyblue, teal, seagreen);
+    -webkit-text-fill-color: transparent;
+    /* Ojo! los webkits no tienen soporte en Firefox */
+    background-clip: text;
+    /* Me lo pidio por compatibilidad pero no hace nada (no reemplaza al webkit). */
+    -webkit-background-clip: text;
+    /* Ojo! los webkits no tienen soporte en Firefox */
+}
+/* CURRICULUM VITAE / PORTFOLIO */
+.cv {
+    display:flex;
+    justify-content: space-between;
+    
+}
+.middle .cv img {
+    border-radius: 50%;
+    background-color: gainsboro;
+    object-fit: cover;
+    object-position: 0 25px; /* La img quedaba muy centrada. Se veia el borde horizontal de abajo. Con esto hice ue la imagen "bajara" y quedara mejor. */
+}
+.cv #cv-column-left {
+    width: 35%;
+}
+.cv #cv-column-left h2, .cv #cv-column-left h3 {
+    text-align: center;
+    align-self: center;
+    margin: auto 0;
+}
+.cv #cv-column-left img {
+    width: 90%;
+}
+.cv #cv-column-right {
+    width: 65%;
+}
+/* Imgs on the Right remain static on the CV page */
+.right.cv-right img, .right.cv-right img {
+    position: static;
+        object-fit: scale-down;
+        display: block;
+        float: none;
+        width: 100%;
+        border-radius: 5%;
+        right: auto;
+        margin: 8px 0;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other (Mobile width) */
+@media (max-width: 845px) {
+    .content .cv {
+        margin: 0.2rem 0.4rem;
+        /* The margin on the actual page content (allows the background color to be visible) */
+        border-radius: 10px;
+    }
+    .content .cv .left {
+        margin-left: 0;
+    }
+    .content .cv .middle {
+        margin-right: 0;
+    }
+
+    .navbar-top {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        
+    }
+    .navbar-top .link-block {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-top .link-block a {
+        display: block;
+        width: 100%;
+        text-align: start;
+        padding: 8px 15px;
+    }
+    /* Th second child is the first link (the first child would be the Logo) */
+    .navbar-top .link-block:nth-child(2) {
+        margin-top: 60px;
+        /* Had to put margin bc img absolute positioning made it float on top of links */
+    }
+    .navbar-top img {
+        width: 60px;
+        position: absolute; /* Img had to become absolute (from relative bc it did weird things with the double img Logo) */
+        display: block;
+        min-width: 20px;
+        margin: 5px 5px;
+        
+        border-radius: 50%;
+    }
+    .grid-container {
+        grid-template-areas:
+            'header header header header header header'
+            'navbar-top navbar-top navbar-top navbar-top navbar-top navbar-top'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer';
+        grid-gap: 10px 2px; /* - if you want gap between the columns */
+        margin: 5px 5px;/* 
+        margin-top: 500px; */
+    }
+
+    .grid-container.cv {
+        grid-template-areas:
+            'header header header header header header'
+            'navbar-top navbar-top navbar-top navbar-top navbar-top navbar-top'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'footer footer footer footer footer footer';
+        grid-gap: 10px 2px; /* - if you want gap between the columns */
+        margin: 5px 5px;/* 
+        margin-top: 500px; */
+    }
+    
+    .left, .middle, .right {
+    min-height: auto;  
+}
+    
+    .middle {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .right img {
+        position: static;
+        object-fit: cover;
+        display: block;
+        float: none;
+        width: 100%;
+        border-radius: 5%;
+        right: auto;
+        margin: 8px 0;
+    }
+    .right img:hover, .right img:active {
+        position: static;
+        object-fit: cover;
+        display: block;
+        float: none;
+        width: 100%;
+        border-radius: 5%;
+        right: auto;
+        margin: 8px 0;
+    }
+
+    
+}
+/* Responsive. Makes some columns from the main content to stack on top of achother. (Tablet Width) */
+@media (max-width: 1225px) {
+    .about {
+        display:flex;
+        flex-direction: column;
+    }
+    .about #about-column-left {
+        width: 90%;
+    }
+    .about #about-column-right {
+        width: 90%;
+    }
+    .about #about-column-right img {
+        display: block; 
+        text-align: center; 
+        border-radius: 35%;
+        width: 60%;
+        margin: -5% 20%;
+        
+    }
+    /* .grid-container.cv { */
+        /* grid-template-areas:
+            'header header header header header header'
+            'navbar-top navbar-top navbar-top navbar-top navbar-top navbar-top'
+            'left middle middle middle middle middle'
+            'footer footer footer footer footer footer'; */
+        /* column-gap: 10px;  */
+        /* grid-template-columns: minmax(100px, 350px) repeat(4, 1fr) minmax(100px, 350px); */
+        /* height: 100%;
+        margin-bottom: 0; */
+    /* } */
+    .content .cv .left {
+        margin-left: minmax(100px, 8rem);
+    }
+    .content .cv .middle {
+        margin-right: minmax(100px, 8rem);
+    }
+    .cv {
+        display:flex;
+        flex-direction: column;
+    }
+    .cv #cv-column-left {
+        width: 100%;
+    }
+    .cv #cv-column-left img {
+        /* max-height: 43vh;
+        width: auto; */
+        max-width: 95%;
+        width: auto;
+        max-height: 55vh;
+        height: auto;
+    }
+    .cv #cv-column-right {
+        width: 100%;
+    }
+}

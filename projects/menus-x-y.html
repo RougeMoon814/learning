@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus & Navbars v1</title>
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- Load "font awesome" icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="menus.css">
+</head>
+
+<body>
+    <header id="top">
+        <!-- Back to Top^ Button -->
+        <div id="screen-size-top-tag"></div>
+        <div class="float-r" styles="border-margin 50%; position: fixed;">
+            <a role="button" href="#top"><button id="go-top">^</button></a>
+        </div>
+        <br>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary m-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" title="JC"><img class="navbar-img" alt="Site IMG"
+                        src="img/flat-paw-print.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-outline-info dropdown-toggle mx-1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Concepts
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html#box-model">Box Model</a></li>
+                                <li><a class="dropdown-item" href="../index.html#box-sizing">Box Sizing</a></li>
+                                <li><a class="dropdown-item" href="../index.html#bem-method">BEM Method</a></li>
+                                <li><a class="dropdown-item" href="../index.html#elements">Elementos</a></li>
+                                <li><a class="dropdown-item" href="../index.html#links">Links</a></li>
+                                <li><a class="dropdown-item" href="../index.html#paths">Paths</a></li>
+                                <li><a class="dropdown-item" href="../index.html#text-change">Tipografia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#tabla">Tabla</a></li>
+                                <li><a class="dropdown-item" href="../index.html#lista">Lista</a></li>
+                                <li><a class="dropdown-item" href="../index.html#cursor">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../index.html#form-test">Formulario</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#object-fit">Object Fit</a></li>
+                                <li><a class="dropdown-item" href="../index.html#object-position">Obj Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#overflow">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../index.html#float">Float</a></li>
+                                <li><a class="dropdown-item" href="../index.html#position">Position</a></li>
+                                <li><a class="dropdown-item" href="../index.html#display">Display</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../index.html#transform">Transform</a></li>
+                                <li><a class="dropdown-item" href="../index.html#transition">Transition</a></li>
+                                <li><a class="dropdown-item" href="../index.html#animation">Animation</a></li>
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Responsive
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../responsiveness.html">Responsiveness</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#view-port">Viewport</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#mobile-first">Mobile First</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#screen-grid">Screen Grid</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#media-queries">Media Queries</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Layout ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#flex-box">Flexbox</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-layout">Grid Layout</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Frameworks ~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#boot-strap">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#tail-wind">Tailwind</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#w3-css">W3.CSS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~PreProcessors~
+                                </li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#sass">SASS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#less">LESS</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#stylus">STYLUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn dropdown-toggle btn-outline-warning text-secondary"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Multimedia
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../multimedia.html#Img">Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Audio">Audio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Video ~
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Video">Video</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#YouTube">Video (YouTube)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#Vimeo">Video (Vimeo)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">Responsive Media
+                                </li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-images">Responsive
+                                        Image</a></li>
+                                <li><a class="dropdown-item" href="../multimedia.html#responsive-video">Responsive
+                                        Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="../index.html#challenges">Challenges</a></li>
+                                <li><a class="dropdown-item" href="form-examples.html">Forms</a></li>
+                                <li><a class="dropdown-item" href="landing-product-page.html">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="restaurant-site.html">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="../responsiveness.html#grid-example">Art Gallery</a>
+                                </li>
+                                <li><a class="dropdown-item" href="parallax-site.html">Parallax</a></li>
+                                <li><a class="dropdown-item" href="search-bar.html">Search</a></li>
+                                <li><a class="dropdown-item" href="homepage.html">Homepage</a></li>
+                                <li><a class="dropdown-item" href="tribute-site.html">Tribute</a></li>
+                                <li><a class="dropdown-item" href="music-store.html">Music Store</a></li>
+                                <li><a class="dropdown-item" href="events-site.html">Events</a></li>
+                                <li><a class="dropdown-item" href="CV.html">CV / Portfolio</a></li>
+                                <li><a class="dropdown-item" href="wiki-docs.html">Docs / Wiki</a></li>
+                                <li><a class="dropdown-item" href="calculator.html">Calculator</a></li>
+                                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                                <li><a class="dropdown-item" href="proyecto-dnd/index.html"
+                                        title="Projecto de prueba relacionado con DnD. &nbsp; Para volver a este proyecto solo hay que poner 'Contact Me'.">D&D
+                                        Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">More</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex navbar-nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#sign-in">SignIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html#log-in">Contact Me</a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <button><img title="Idioma Español" alt="Spain Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                    height="25px" /></button> |
+                            <button><img title="English Language" alt="UK Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                    height="25px" /></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <h3>Menus, Navbars, & Sidebars</h3>
+
+    </header>
+    <br>
+
+    <section>
+        <h4>W3Schools Menus</h4>
+        <ul>
+            <li>W3Schools is a great way to learn and I'm kinda lost. There's a long list of how do in w3schools. Start
+                from <a href="https://www.w3schools.com/howto/howto_js_topnav.asp">here</a> I guess.</li>
+            <li>I can kinda make a top menu / navbar (lies! I took it from bootstrap) but sidebars elude me.</li>
+            <li>There're many variants and stuff. This is a <a
+                    href="https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp">Fixed Vertical Menu</a>. <a
+                    href="https://www.w3schools.com/howto/howto_js_sidenav.asp">Sidenav appearing</a> requieres
+                JavaScript (Lies as well! I managet to do one on hover following a tutorial). Now the mobile menu hamburger nav is a challenge.</li>
+            <li>Lastly there are some crazy stuff like <a
+                    href="https://www.w3schools.com/howto/howto_css_subnav.asp">Subnavigation Menus</a> and <a
+                    href="https://www.w3schools.com/howto/howto_css_mega_menu.asp">Mega Menus</a></li>
+            <li>Pay attention to the link. If it says something like "howto_js_etc" don't mind it, the code icludes
+                JavaScript (I'm trying to make these projects HTML and CSS only)</li>
+        </ul>
+        <br> <!-- Horizontal Menu Responsive -->
+        <h5>Horizontal Menu Responsivo</h5>
+        <div class="horizontal-menu-responsive">
+            <div class="horizontal">
+                <div class="mobile"> <!-- Menu en Mobile -->
+                    <div class="header">
+                        <div class="logo"><img src="../img/coffee.png" alt="logo" width="50px"></div>
+                        <div class="all-mini">
+                            <a class="more"><button><img src="../img/hamburger-menu.png" alt="hamburger menu" width="30px"></button></a>
+                            <div class="links">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                <a href="#">Sign Up</a>
+                                <a href="#">Login</a>
+                                <a href="#">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="desktop"> <!-- Menu en Desktop -->
+                    <div class="logo"><img src="../img/coffee.png" alt="logo" width="50px"></div>
+                    <div class="primary">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="secondary full">
+                        <a href="#">Sign Up</a>
+                        <a href="#">Login</a>
+                        <a href="#">Search</a>
+                    </div>
+
+                    <div class="secondary mini"> <!-- Menu Intermedio. Opciones de "secondary full" ocultas -->
+                        <a href="#" class="more"><button><img src="../img/hamburger-menu.png" alt="hamburger menu" width="30px"></button></a>
+                        <div class="submenu">
+                            <a href="#">Sign Up</a>
+                            <a href="#">Login</a>
+                            <a href="#">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <!-- Menu Responsive (Soy Dalto) -->
+        <h5>Menu Responsive (Soy Dalto)</h5>
+        <ul>
+            <li><i><a href="https://youtu.be/OWKXEJN67FE?t=15505">Tutorial de CSS de Soy Dalto (Menu Responsive)</a></i></li>
+            <li>Similar al anterior pero no me salió. Probemos de nuevo.</li>
+            <li>(Sin JavaScript)</li>
+            <li>:|</li>
+            <li>Comenzamos definiendo los estilos de uno de los dos navs (el de desktop o el de mobile).</li>
+        </ul>
+        <div class="menu-dalto">
+            <header>
+                <nav class="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li"><a href="#"><img src="../img/goblin-w.png" alt=""> Inicio</a></li>
+                        <li class="nav__li"><a href="#"><img src="../img/abstract-066-w.png" alt=""> Link 1</a></li>
+                        <li class="nav__li"><a href="#"><img src="../img/character-w.png" alt=""> Link 2</a></li>
+                        <li class="nav__li"><a href="#"><img src="../img/abstract-016-w.png" alt=""> Link 3</a></li>
+                    </ul>
+                    <ul class="nav__responsive-ul">
+                        <div class="responsive-button"><img src="../img/hamburger-menu.png" width="30px" alt=""></div>
+                        <div class="nav__li-container">
+                            <li class="nav__responsive-li"><a href="#">Inicio</a></li>
+                            <li class="nav__responsive-li"><a href="#">Link 1</a></li>
+                            <li class="nav__responsive-li"><a href="#">Link 2</a></li>
+                            <li class="nav__responsive-li"><a href="#">Link 3</a></li>
+                        </div>
+                        
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <br> <!-- Icon Bar -->
+        <h5>Icon Bar</h5>
+        <div class="icon-bar icon-bar-X">
+            <a class="active" href="#"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+            <a href="#"><i class="fa fa-trash"></i></a>
+        </div>
+            <div class="icon-bar">
+                <a class="active" href="#"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a href="#"><i class="fa fa-globe"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+            </div>
+            
+            <ul>
+                <li>Using "Font Awesome" Icons</li>
+            </ul>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolore optio, dolorum quibusdam, tenetur beatae vitae sapiente voluptas praesentium, cum adipisci! Id repellat commodi laborum odit corporis, autem similique aliquam! <br>
+            Molestias, eaque ipsum sed impedit explicabo cum deserunt incidunt perferendis dicta ducimus quod optio nobis quia vero in. Voluptates officia ipsam porro. 
+            Autem similique placeat repudiandae provident, cumque maiores tenetur dolores quo eligendi quam repellendus, exercitationem reiciendis adipisci aperiam omnis impedit architecto ratione quos!
+        </div>
+        <br> <!-- Navbar on Img + Text Blocks Over Image -->
+        <h5>Navbar on Img + Text Blocks Over Image</h5>
+        <div class="banner-navbar">
+            <ul>
+                <li>Menu / Navbar on top of an image (top banner).</li>
+                <li>Easy to do using background-image</li>
+            </ul>
+            <div class="bg-img">
+                <div class="container1">
+                    <div class="topnav">
+                        <a href="#home">Home</a>
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="text-block">
+                        <h4>Nature</h4>
+                        <p>What a beautiful sunrise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <!-- Common Sidebar / Vertical Menu -->
+        <h5>Sidebar / Vertical Menu</h5>
+        <div class="common-sidebar">
+            <div class="vertical-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+
+                <div class="sidebar-dropdown2">Dropdown <b><small >v</small></b>
+                    <ul class="link-block">
+                        <li><a href="../index.html">Option 1</a></li>
+                        <li><a href="menus-x-y.html#top" target="_self">Top</a></li>
+                        <li><a href="#top">Option 3</a></li>
+                        <li><a href="#">Other (Opt 5)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li>Had to put a float: left; on the sidebar and a bit of margin-right.</li>
+                <li>Is Dropdown no working? Fixed It</li>
+                <li>Now links don't work inside of a &lt;select&gt; (dropdown). Had to replace the dropdown with a hidden unordered list to simulate a dropdown.</li>
+            </ul>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolore optio, dolorum quibusdam, tenetur beatae vitae sapiente voluptas praesentium, cum adipisci! Id repellat commodi laborum odit corporis, autem similique aliquam! <br>
+            Molestias, eaque ipsum sed impedit explicabo cum deserunt incidunt perferendis dicta ducimus quod optio nobis quia vero in. Voluptates officia ipsam porro. 
+            Autem similique placeat repudiandae provident, cumque maiores tenetur dolores quo eligendi quam repellendus, exercitationem reiciendis adipisci aperiam omnis impedit architecto ratione quos!
+        </div>
+        <br> <!-- Fixed sidebar -->
+        <h5>Fixed sidebar</h5>
+        <div class="sidebar1">
+            <!-- Side navigation -->
+            <div class="sidenav">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Page content -->
+            <div class="main">
+                Notice how this "page content" is not covered by the sidebar. <br>
+                Lowered the sidebar color opacity so the actual content could be seen. <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus corrupti distinctio inventore nulla
+                corporis delectus. Animi recusandae vitae voluptates impedit praesentium natus possimus, ab delectus ea?
+                Excepturi harum veritatis culpa!
+            </div>
+        </div>
+        <br><!-- Hoverable Sidenav Buttons -->
+        <h5>Hoverable Sidenav Buttons</h5>
+        <div class="sidebar2">
+            <div id="mySidenav" class="sidenav">
+                <a href="#" id="about">About</a>
+                <a href="#" id="blog">Blog</a>
+                <a href="#" id="projects">Projects</a>
+                <a href="#" id="contact">Contact</a>
+            </div>
+
+            <div class="main">
+                <ul>
+                    <li>Partly hidden behind the fixed sidebar but brought them on top with z-index.</li>
+                </ul>
+            </div>
+        </div>
+        <br><!-- Hoverable Sidebar -->
+        <div class="sidebar3">
+            <div class="hoverable-sidebar">
+                <div class="sidebar3-header">
+                    <div class="bar">Logotipo blabla</div>
+                    <div class="user">
+                        <img src="../img/coffee.png" alt="profile user" />
+                        <div class="name">Coffee McAfee</div>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="#">
+                        <div class="icon"><img src="../img/abstract-016-w.png" alt="profile user" width="30px" height="30px" /></div>
+                        <div class="title">Link 1</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon"><img src="../img/goblin-w.png" alt="profile user"  width="30px" height="30px" /></div>
+                        <div class="title">Link 2</div>
+                    </a>
+                    <a href="#">
+                        <div class="icon"><img src="../img/abstract-066-w.png" alt="profile user"  width="30px" height="30px" /></div>
+                        <div class="title">Link 3</div>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <h5>Hoverable Sidebar</h5>
+                <ul><li>Los links me hacían wibbly-wobbly pero despues de agregarle un ancho fijo a la seccion de "user" y a la seccion de "bar" (arriba de todo) se calmaron por fin.</li></ul>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laboriosam numquam consequatur dignissimos sint, earum enim repellendus iste perferendis optio, cumque vel nostrum? Sed dignissimos officiis obcaecati quas quos quia. Laborum a ut neque consequatur. Tempore saepe quaerat, perspiciatis debitis sed iste temporibus ipsa itaque voluptate impedit iure veniam officia, sunt minus? Ex, impedit ipsam! Recusandae pariatur eveniet molestiae vero, porro quibusdam labore necessitatibus eos mollitia voluptatibus velit. Fugiat voluptatem tenetur voluptate minima eum?
+            </div>
+        </div>
+        <br><!-- Subnavigation Menu -->
+        <h5>Subnavigation Menu</h5>
+        <div class="sub-nav">
+            <!-- The navigation menu -->
+                <a href="#home">Home</a>
+                <div class="subnav">
+                    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#company">Company</a>
+                        <a href="#team">Team</a>
+                        <a href="#careers">Careers</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#bring">Bring</a>
+                        <a href="#deliver">Deliver</a>
+                        <a href="#package">Package</a>
+                        <a href="#express">Express</a>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#link1">Link 1</a>
+                        <a href="#link2">Link 2</a>
+                        <a href="#link3">Link 3</a>
+                        <a href="#link4">Link 4</a>
+                    </div>
+                </div>
+                <a href="#contact">Contact</a>
+            </div>
+            <ul>
+                <li>Not working...? Why? After meddling around found an ugly solution using &lt;br&gt; but I didn't want that. Removed the exterior custom &lt;div&gt; and replaced container class "navbar" for class "sub-nav", that did the trick.</li>
+                <li>Example Explained
+                    <ul>
+                        <li>Use any element to open the subnav/dropdown menu, e.g. a &lt;button&gt;, &lt;a&gt; or
+                            &lt;p&gt; element.</li>
+                        <li>Use a container element (like &lt;div&gt;) to create the subnav menu and add the subnav
+                            links inside it.</li>
+                        <li>Wrap a &lt;div&gt; element around the button and the &lt;div&gt; to position the subnav menu
+                            correctly with CSS.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br><!-- Mega Menu (not working) -->
+        <h5>Mega Menu</h5>
+            <div class="mega-menu">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="header">
+                            <h2>Mega Menu</h2>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h3>Category 1</h3>
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                            <div class="column">
+                                <h3>Category 2</h3>
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                            <div class="column">
+                                <h3>Category 3</h3>
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Link 5</a>
+                <a href="#">Link 6</a>
+            </div>
+            <ul>
+                <li><a href="https://www.w3schools.com/howto/howto_css_mega_menu.asp"> W3Schols How TO - Mega Menu</a></li>
+                <li>Not working...? Why?</li>
+                <li>Example Explained
+                    <ul>
+                        <li>We have styled the navigation bar and the navbar links with a background-color, padding,
+                            etc.</li>
+                        <li>We have styled the dropdown button with a background-color, padding, etc.</li>
+                        <li>The .dropdown-content class holds the actual dropdown menu. It is hidden by default, and
+                            will be displayed on hover (see below). It is positioned to be visible right below the
+                            dropdown button, and the width is set to 100% to cover the whole screen.</li>
+                        <li>Instead of using a border, we have used the box-shadow property to make the dropdown menu
+                            look like a "card". We also use z-index to place the dropdown in front of other elements.
+                        </li>
+                        <li>The :hover selector is used to show the dropdown menu when the user moves the mouse over the
+                            dropdown button.</li>
+                        <li>The .column classes are used to create three columns that floats next to each other inside
+                            the dropdown menu (to show different categories).</li>
+                    </ul>
+                </li>
+            </ul>
+        <br> <!-- Search Bar -->
+        <h5>Search Bar</h5>
+        <div class="search-bar">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <input type="text" placeholder="Search..">
+            </div>
+        </div>
+        <br> <!-- Login Form in Navbar -->
+        <h5>Login Form in Navbar</h5>
+        <div class="login-navbar">
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <div class="login-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Username" name="username">
+                        <input type="text" placeholder="Password" name="psw">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h5>Dynamic (Grid) sidebar</h5>
+        <ul>
+            <li><i><a href="../responsiveness.html#grid-example1">Ejemplo con Galeria Responsive</a></i></li>
+            <li>different layouts but we only have one grid configuration that works for all of them</li>
+            <li>one column is taking up all the free space (main). This is our “explicit” grid.</li>
+            <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_22CFA31B1660A9828247E1ADB4304E7D5F3D7A0297EF8C4102BEC76643B72155_1658164432480_implicit-grid-tracks.jpg" alt="what DevTools tells us is happening"></li>
+            <li>The element takes up the entire column that is explicitly set on the container. Meanwhile, the falls onto a new row between implicit grid lines labeled 2 and 3. Note that I'm using a 20px gap to help separate things visually.</li>
+        </ul>
+        <div class="sidebar4">
+            <h6>Without Sidebar</h6>
+            <main>
+                <section></section>
+            </main>
+            <h6>With right Sidebar</h6>
+            <main>
+                <section></section>
+                <aside></aside>
+            </main>
+            <h6>With left Sidebar</h6>
+            <ul><li>We set the &lt;aside&gt; element outside of the explicit grid: <code>aside { grid-column-end: -2; }</code></li>
+            <li>We could place the &lt;aside&gt; before the &lt;section&gt; instead like this: <code>aside { grid-column-end: -2; } </code> <br>
+            This creates the implicit column at the start of the grid, unlike the previous code that places the implicit column at the end</li></ul>
+            <main>
+                <aside></aside>
+                <section></section>
+            </main>
+        </div>
+        <ul>
+            <li>We can move the &lt;aside&gt; to a column beside the &lt;section&gt; <br>
+                <code>aside { grid-column-start: 2; }</code> <br>
+                what DevTools tells us now:</li>
+            <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_22CFA31B1660A9828247E1ADB4304E7D5F3D7A0297EF8C4102BEC76643B72155_1658164938340_implcit-grid-column.jpg" alt="aside { grid-column-start: 2; }"></li>
+            <li>The element is between the grid container's first and second grid column lines. The starts at the second grid column line and ends at a third line we never declared.</li>
+            
+            <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1658223128249_image.png" alt=""></li>
+            <li>We do still need grid-column-end if we want to place it in a column to the left of it because, otherwise, the <aside> will occupy the explicit column which, in turn, pushes the <section> outside the explicit grid and forces it to take the implicit column.</li>
+        </ul>
+
+        <br> <!-- Toogles -->
+        <h5>Toogles</h5>
+        <div class="toogles">
+            <!-- Rectangular switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        </section>
+
+    <br><hr><br>
+
+    <section>
+        <h4>Other Menus</h4>
+        <ul>
+            <li>This is [theoretically] the part where I actually start doing <strike>stuff</strike> my own stuff.</li>
+            <li>Please don't judge it too harshly.</li>
+        </ul>
+    </section>
+
+    <br><br><br>
+    <footer class="footer" id="bottom">
+        <h2>Footer</h2>
+        <br>
+        Copyright 2022
+        <section class="float-r">
+            <a href="mailto:email@email.com">Contacto</a> | <a href="#top">Ir arriba ^</a>
+        </section>
+        <br><br>
+    </footer>
+</body>
+
+</html>

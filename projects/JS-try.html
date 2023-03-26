@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title & Icon -->
+    <title>JavaScript try v1</title>
+    <link rel="icon" type="image/x-icon" href="../favicon2.ico">
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="../styles-2.css" />
+    <!-- <link rel="stylesheet" href="js-try.css" /> -->
+    <!-- JavaScript -->
+    <script src="JS-try.js"></script>
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="Document HTML Try v1" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="img/coffee.png" />
+    <meta property="og:description" content="Mi primer documento HTML">
+</head>
+
+<body>
+    <div class="content">
+        <!-- Navbar (sit on top) -->
+        <header id="top">
+            <!-- Back to Top^ Button -->
+            <div id="screen-size-top-tag"></div>
+            <div class="float-r" styles="border-margin 50%; position: fixed;">
+                <a role="button" href="#top"><button id="go-top">↑</button></a>
+            </div>
+        </header>
+
+        <div class="grid-container">
+            <div class="header">
+                <h2>JavaScript</h2>
+            </div>
+
+            <!-- NavBar -->
+            <div class="navbar-top">
+                <a href="../index.html">
+                    <div id="logo">
+                        <img title="Homepage" src="../img/plants-and-animals.png" alt="LOGO">
+                        <img title="Homepage" src="../img/temptation.png" alt="LOGO">
+                    </div>
+                </a>
+
+                <div class="link-block">
+                    <a href="#shop">Shop</a>
+                    <a href="#art">Art</a>
+                    <a href="../wiki-docs.html">Docs</a>
+                    <a href="#games">Games</a>
+                    <a href="../about-main.html">About</a>
+                </div>
+                <!-- <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                </div> -->
+            </div>
+            <br>
+            <div class="left docs">
+                <h5>Sidebar</h5><!-- LEFT MENU SIDEBAR -->
+                <div class="dropdown">JavaScript <b><small> v </small></b>
+                    <ul class="link-block">
+                        <li><a title="" href="#">Basic</a></li>
+                        <hr disabled width="50%" style="margin:0 auto;">
+                        <li><a title="for navigation" href="#">Tabs</a></li>
+                        <li><a title="[Spinner]" href="#">Loading "Video"</a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a href="#">Counter</a></li>
+                        <li><a href="#">Countdown Timer</a></li>
+                        <li><a href="#">Clock</a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Weather Widget</a></li>
+                        <li><a href="#">Pokedex</a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a href="#">Password Generator</a></li>
+                        <li><a href="#">Lorem Ipsum generator</a></li>
+                        <li><a title="accordion?" href="#">FAQ Questions
+                            </a></li>
+                        <li><a title="like quotes" href="#">Reviews
+                            </a></li>
+                        <li><a href="#">Quiz</a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a href="#">Notes App</a></li>
+                        <li><a href="#">Todo / Tasks</a></li>
+                        <li><a href="#" title="like Grid Gallery. Think Putlockers">Movies App</a></li></a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a href="#">Grocery Cart</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Recipe App</a></li>
+                        <li><a href="#">Restaurant Menu</a></li>
+                        <hr disabled width="50%" style="margin:0.5rem auto;">
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=Ymbv6m3EuNw&list=PLdsOJFno6nLzdNylBVHjhpuAMXNWo-4IO&index=206">Canvas
+                                & JS</a></li>
+                        <li><a href="#">Color Flipper</a></li>
+                        <li><a href="#">Drawing App</a></li>
+                        <li><a href="#">Sprite Animation</a></li>
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=UoTxOVEecbI&list=PLdsOJFno6nLzdNylBVHjhpuAMXNWo-4IO&index=192">Pixel
+                                Effect</a></li>
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=_QXjt_o8LC8&list=PLdsOJFno6nLzdNylBVHjhpuAMXNWo-4IO&index=211">Game
+                                Camera System</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+                <br>
+                <img width="200px" src="../img/Under Construction.png" alt="under construction">
+
+            </div>
+
+            <div class="middle docs"><!-- MAIN PAGE CONTENT -->
+                <h3>JavaScript</h3>
+                <br>
+                <section id="basic">
+                    <h4>Basic</h4>
+                    <br>
+                    <ul>
+                        <li><code>console.log("hola mundo");</code> / <code>console.log(a);</code> (muestra variable)
+                            para mostrar en consola algo
+                            <ul>
+                                <li>En la pagina web no vemos nada nuevo pero en la Consola de los DevTools vemos
+                                    nuestro "Hola mundo"</li>
+                                <li>Para que no tengamos que correr JS desde la consola del navegador podemos
+                                    descargarnos <a href="https://nodejs.org/en/">NodeJS</a>
+                                    <ul>
+                                        <li>open-source, cross-platform JavaScript runtime environment</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="https://codepen.io/">Codepen</a> is also useful for watching your code in real time
+                        </li>
+                    </ul>
+                    <ul><h5>Comments</h5>
+                        <li>In HTML: <code>&lt;!-- comment --&gt;</code></li>
+                        <li>In CSS: <code>/* comment */</code></li>
+                        <li>In JS: <code>// inline comment</code> (goes at the end of a line of code).
+                            <br>
+                            <code>/* multi-line <br>comment */</code> (like CSS)
+                        </li>
+                    </ul>
+                    <ul><h5>Data Types</h5> & <h5>Variables</h5>
+                        <li>undefined (not defined yet), null (nothing), boolean (T/F), string (alphanumeric), symbol
+                            (char/ inmutable unique primitive value), number, object (can store key value pairs).</li>
+                        <li>Ej: <code>var myName = "Beau"</code> (string) and can reset the data type by later putting
+                            <code>theNumber = 8</code> (number)
+                        </li>
+                        <li>
+                            Booleans return true / false.
+                            <ul>
+                                <li>Ej: <br>
+                                    <code>
+                                        function booleanfunc() {
+                                            <br>
+                                            return false;
+                                            <br>
+                                        }
+                                    </code>
+                                </li>
+                                <li>
+                                    Since all comparisons return a true / false value an easy way of writing a function would be <br><br>
+                                    <code>
+                                        function is Less(a, b) {
+                                            <br>
+                                            return a &lt; b;
+                                                <br>
+                                        }
+                                        <br>
+                                        console.log(isLess(10, 15));
+                                    </code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Strings are immutable
+                            <ul>
+                                <li>
+                                    <code>var myStr = "Jello World"</code> <br>and <br>
+                                    <code>myStr[0] = "H"</code> will give an error. I have to write the string again
+                                    <br>
+                                    <code>var myStr = "Hello World"</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>I can escape quotation marks like this: <br>
+                            <code>var myString = "I have \"double quotes" all over \"this" variable"</code> (\ can
+                            "escape" from quotes), other way is using 'single quotes'
+                        </li>
+                        <li>Variables are CasE Sensitive. And It's considered best practise to use camelCase</li>
+                        <li>3 ways to declare variables in JS:
+                            <ul>
+                                <li>The original: <br><code>var myName = "Beau"</code> (not recommended). Will be able
+                                    to de used in the whole program.</li>
+                                <li>For reusable variables: <br><code>let myName = "Beau"</code>. Will only be able to
+                                    be used where you have declared that.</li>
+                                <li>For non-reusable variables: <br><code>const myName = "Beau"</code>. Variable that
+                                    can't / should never change (you'll get a error if you try).</li>
+
+                            </ul>
+                        <li>Declaring variables =/= assigning variables <br>
+                            <ul>
+                                <li>
+                                    Ej: <code>var a;</code> (I'm declaring a variable) and later declare
+                                    <code>a = 7;</code><br>
+                                </li>
+                                <li>
+                                    <code>var b = 2;</code> (I'm declaring and assigning a variable)
+                                </li>
+                                <li><code>b = a;</code> (I've assigned the contents of <code>a</code> to <code>b</code>)
+                                </li>
+                                <li>We always have to initilize tha value of a const variable (since we can't change it later), while we din't have to assign a value to var and let variables (default variable and reusable variable).</li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li>Uninitialized Variables
+                            <ul>
+                                <li>
+                                    // We inicialize the variables
+                                    <code>
+                                        var a = 5; <br>
+                                        var b = 10; <br>
+                                        var c = "I'm a ";
+                                    </code>
+                                    <br><br>
+                                    <code>
+                                        a = a + 1; <br>
+                                        b = b + 5; <br>
+                                        c= c + "String";
+                                    </code>
+                                </li>
+                                <li>Adding numbers: <br>
+                                    <code>var sum 10 + 5;</code> (straightforward) <br>Substracting numbers: <br>
+                                    <code>var diferrence 10 - 5;</code>
+                                    <br>
+                                    Multiplication: <br>
+                                    <code>var product 10 * 5;</code>
+                                    <br>
+                                    Division: <br>
+                                    <code>var divide 10 / 5;</code>
+                                </li>
+                                <li>Incrementing numbers:
+                                    (add 1 to it) <br>
+                                    Ej: <code>var myVar = 5;</code><br>
+                                    <code>myVar = myVar + 1;</code>
+                                    <br>
+                                    The quicker way is: <br>
+                                    <code>myVar++;</code>
+                                    <br><br>
+                                    Decrementing Numbers: <br>
+                                    Ej: <code>var myVar = 5;</code><br>
+                                    <code>myVar = myVar - 1;</code>
+                                    <br>
+                                    The quicker way is: <br>
+                                    <code>myVar--;</code>
+                                </li>
+                                <li>
+                                    Decimals / floats: <br>
+                                    <code>var decimalNumber = 2.5;</code>
+                                    <br>
+                                    The multiplication and division is the same as with numbers.
+                                </li>
+                                <li>The remainder gives the remaining of a division of 2 numbers <br>
+                                    Ej: <code>var remainder;</code><br>
+                                    <code>remainder 11 % 3;</code> (is gonna give 2). <br>
+                                    Used often to determine if a number is even or odd.
+                                </li>
+                                <li>
+                                    Compound Assignment with Augmented operations:
+                                    <br>
+                                    Ej: <br>
+                                    <code>a += 12;</code>
+                                    <br>
+                                    <code>a -= 12;</code>
+                                    <br>
+                                    <code>a *= 12;</code>
+                                    <br>
+                                    <code>a /= 12;</code>
+                                </li>
+                                <br>
+                                <li><code>var playerName = "username";</code> <br>
+                                    <code>var ourString = "Hello player " + playername + ", how are you?";</code>
+                                </li>
+                                <li>You can append variables to strings using the += operator. <br>
+                                    Ej: <code>var songLyrics = "I'm blue ";</code> <br>
+                                    <code>var songThing = "da da dee da da da";</code> <br>
+                                    <code>var songLyrics += songThing;</code>
+                                </li>
+                                <li>Length of string: <br>
+                                    <code>var randomVariable = "Username"; </code> <br>
+                                    <code>var lengthOfRandomVariable = randomVariable.length;</code>
+                                </li>
+                                <li><h5>[Bracket notation]</h5> to find character in string: <ul>
+                                        <li>first / nth character: <br>
+                                            <code>var firstName = "Ada"; </code> <br>
+                                            <code>var firstLetter = firstName[0];</code> <br>("zero based indexing",
+                                            most computer arrays begin at zero)
+                                        </li>
+                                        <li>
+                                            last character: <br>
+                                            <code>
+                                            var lastLetter = firstName[firstName.lenght - 1];
+                                        </code> <br>
+                                            (I substract 1 because the array strats at zero)
+                                        </li>
+                                        <li>
+                                            for the nth-to-last character is the same as last but you substract the
+                                            number you need.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            World Blanks (Mad Libs style game)
+                            <ul>
+                                <li>In a Mad Lib game you're provieded sentenses with some missing words and then you
+                                    fill the missing pieces with words of your choice, to make a funny sentence that
+                                    still makes sense.</li>
+                                <li><code>
+                                    function worldBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+                                        <br><br>
+                                        var result = "";</code> (equals to an empty string at first) <code>
+                                        <br><br>
+                                        result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + "."
+                                        <br><br>
+                                        return result;
+                                        <br><br>
+                                    }
+                                    <br><br>
+                                    console.log(wordBlanks("dog", "big", "ran", "quickly"));
+                                </code> (we call the function and fill the blanks with those words)
+                                    <br>
+                                    We can also pass different words like <br>
+                                    <code>
+                                    console.log(wordBlanks("bike", "shining", "flew", "slowly"));
+                                </code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><h5>Arrays</h5>
+                            <ul>
+                                <li>
+                                    Always start and end with brackets, with elements separated with a comma.
+                                </li>
+                                <li>Ej: <br><code>
+                                    var ourArray = ["John", 23];
+                                </code></li>
+                                <li>Nested / Multi-dimensional Arrays:
+                                    <ul>
+                                        <li><code>
+                                            var ourArray =[["the universe", 42], ["everything", 101010]];
+                                        </code></li>
+                                        <li>
+                                            To acces de data: <br>
+                                            <code>
+                                                var myData = myArray[1][0];
+                                            </code> <br>(selects the first element of the second sub-array)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Indexes
+                                    <ul>Access Array data with Indexes:
+                                        <li>same as with the first letter of a string</li>
+                                        <li>Ej: <br><code>
+                                            var ourData = ourArray[0];
+                                        </code></li>
+                                        <br>
+                                        Modify Array data with Indexes:
+                                        <li>You can, contrary to string modification</li>
+                                        <li>Ej: <br>
+                                            <code>
+                                            var ourArray = [1,2,3];
+                                            <br>
+                                            ourArray[1] = 42;
+                                        </code>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Push() to modify (add to) Array
+                                    <ul>
+                                        <li><code>
+                                            var ourArray = ["Stimpson", "J", "cat"];
+                                            <br><br>
+                                            ourArray.push(["happy, "joy"]);
+                                        </code> <br>
+                                            makes the array become <br>
+                                            <code>
+                                            ["Stimpson", "J", "cat", ["happy, "joy"]];
+                                        </code>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Pop() to modify (substract from) Array
+                                    <ul>
+                                        <li><code>
+                                            var ourArray = [1,2,3];
+                                            <br><br>
+                                            var removedFromArray = ourArray.pop();
+                                        </code> <br>
+                                            makes the array become <br>
+                                            <code>
+                                            var ourArray = [1,2];
+                                        </code>
+                                            (removes the last element and puts it into the removedFromArray variable)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Shift() to modify (substract from) Array
+                                    <ul>
+                                        <li>Similar to the pop() function but removes the first elemetn of the array
+                                            instead of the last</li>
+                                        <li><code>
+                                            var ourArray = [1,2,3];
+                                            <br><br>
+                                            var removedFromArray = ourArray.shift();
+                                        </code> <br>
+                                            makes the array become <br>
+                                            <code>
+                                            var ourArray = [2,3];
+                                        </code>
+                                        </li>
+                                        <li>Unshift() to modify (adds to) Array
+                                            <ul>
+                                                <li>Similar to the push() function but add the element to the beggining
+                                                    of the array</li>
+                                                <li><code>
+                                                var ourArray = [1,2,3];
+                                                <br><br>
+                                                ourArray.unshift(4);
+                                            </code> <br>
+                                                    makes the array become <br>
+                                                    <code>
+                                                var ourArray = [4,1,2,3];
+                                            </code>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Array of Arrays (Shopping list)
+                                    <ul>
+                                        <li>Ej: <br>
+                                        <code>
+                                            var myList = [["cereal", 3], ["rice", 2], ["eggs", 12]];
+                                        </code></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Reusable Code with <h5>Functions</h5> 
+                            <ul>
+                                <li>
+                                    We set up the function, always parenthsis at the end of the function name
+                                </li>
+                                <li>
+                                    <code>
+                                        function ourReusableFunction() { <br>console.log("Heyya World");
+                                    <br>}
+                                    </code>
+                                </li>
+                                <li>Anything inside the curly brackets is run everytime the function is called / invoked.</li>
+                                <li>We call it like this: <br><code>
+                                    ourReusableFunction();
+                                </code></li>
+                            </ul>
+                        </li>
+                        <li><h5>Arguments</h5> (Passing Values to Functions with Arguments)
+                            <ul>
+                                <li>Parameters are variables that act as placeholders for the values that are to be input to a function when it is called.</li>
+                                <li>Ej, We have defined the function: <br><code>
+                                    function ourFunctionWithArgs(a, b) { <br>
+                                        console-log(a - b);
+                                    <br>
+                                    }
+                                    <br>
+                                    ourFunctionWithArgs(10, 5);
+                                </code>
+                            <br>
+                            When the function is called we'll pass data (10 and 5) into the function.
+                        </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Global Scope</h5> and Functions
+                            <ul>
+                                <li>Scope refers to the visibility of variables.</li>
+                                <li>Variables defined outside od a function bloack have a <b>global scope</b> (can be seen everywhere in your JavaScript code)</li>
+                                <li>Ej: <code>var myGlobar = 10;</code> <br>is a global variable.</li>
+                                <li>
+                                    In <br>
+                                    <code>
+                                        function fun1() {<br>
+                                            oopsGlobal = 5;
+                                            <br>
+                                        }
+                                    </code><br>
+                                    the variable is global since we "forgot" to put the "var" keyword.
+                                    <br><br>
+                                    While here<br>
+                                    <code>
+                                        function fun1() {<br>
+                                            var theGlobal = 5;
+                                            <br>
+                                        }
+                                    </code><br>
+                                    the variable is only scoped to that function.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Local Scope</h5> and Functions
+                            <ul>
+                                <li>Variables declared within a function as well as the function parameters, have a local scope (only visible from within the function).</li>
+                                <li>Ej: <br>
+                                    <code>
+                                        function myLocalScope(){ <br>
+                                            var myVar = 5; <br>
+                                            console.log(myVar);
+                                        <br>
+                                        }
+                                    </code>
+                                    <br>
+                                    will show the data (5).
+                                    <br><br>
+                                    While if I write <br>
+                                    <code>
+                                        myLocalScope (); <br>
+                                        console.log(myVar);
+                                    </code>
+                                    <br>
+                                    Is gonna give a "not defined" error, because we tried to access "myVar" outside of the function.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Global vs Local</h5>
+                            <ul>
+                                <li>
+                                    It's possible to have local and global variables with the same name.
+                                </li>
+                                <li>
+                                    The local variable takes precedence
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        var outerWear = "T-Shirt";
+                                        <br><br>
+                                        function myOutfit() { <br>
+                                            var outerWear = "sweater";
+                                            <br><br>
+                                            return outerWear;
+                                        <br>}
+                                        <br><br>
+                                        console.log(myOutfit());
+                                    </code>
+                                    <br>
+                                    Will return the line "sweater"
+                                    <br><br>
+                                    But writing
+                                    <code>
+                                        console.log("outerWear");
+                                    </code>
+                                    <br>
+                                    still gives us "T-Shirt" (the global variable).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Return</h5> value from fuction
+                            <ul>
+                                <li>With the "return" statement</li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function minusSeven(num) {
+                                            <br>
+                                            return num - 7;
+                                            <br>
+                                        }
+                                        <br>
+                                        console.log(minusSeven)(10));
+                                    </code>
+                                    <br>
+                                    will give "3".
+                                </li>
+                                <li>
+                                    Undefined returned from function
+                                    <ul>
+                                        <li>
+                                            If you don't specify a return value, it's value is "undfined".
+                                        </li>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                var sum = 0;
+                                                <br>
+                                                function addThree() {
+                                                    <br>
+                                                    sum = sum + 3;
+                                                    <br>
+                                                }
+                                            </code>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Assignment with a returned value
+                                    <ul>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                var changedVar = 0;
+                                                <br><br>
+                                                function change(num) {
+                                                    <br>
+                                                    return (num + 5) / 3;
+                                                    <br>
+                                                }
+                                                <br><br>
+                                                changedVar = change(10);
+                                            </code>
+                                            <br><br>
+                                            now "changedVar" equals the result of that mathematical expression.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            Cue (Stay in Line)
+                            <ul>
+                                <li>[In computer science] is an abstract data structure where items are kept in order.</li>
+                                <li>New items are added to the back of the cue and old items are taken from the front of the cue.</li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function nextInLine(arr, item) {
+                                            <br>
+                                            arr.push(item);
+                                            <br>
+                                            return arr.shift();
+                                            <br>
+                                        }
+                                        <br><br>
+                                        var testArr = [1, 2, 3, 4, 5];
+                                        <br><br>
+                                        console.log("Before:" + JSON.stringify(testArr)); <br><br>
+                                        console.log(nextInLine(testArr, 6)); <br><br>
+                                        console.log("After:" + JSON.stringify(testArr));
+                                    </code>
+                                    <br><br>
+                                    Before: [1, 2, 3, 4, 5];
+                                    <br>
+                                    After: [2, 3, 4, 5, 6];
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h5>Conditionals</h5> and <h5>If</h5> statements
+                            <ul>
+                                <li>Used to make desitions in code.</li>
+                                <li>
+                                    The keyword "if" tells JS to run the function {inside curly braces} id the conditions inside the parenthsis are met. 
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function ourConditional(isItTrue) {
+                                            <br>
+                                            if (isItTrue) {
+                                                <br>
+                                                return "Yes, it's true";
+                                                <br>
+                                            }
+                                            <br>
+                                            return "No, It's false";
+                                            <br>
+                                        }
+                                        <br>
+                                        console.log(ourConditional(true));
+                                    </code>
+                                    <br>
+                                    ("isItTrue" is a variable)
+                                </li>
+                                <br>
+                                <li>
+                                    Comparison with equity operator
+                                    <ul>
+                                        <li>
+                                            The equality operator (among others) will return true or false
+                                        </li>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                function testEqual(val) {
+                                                    <br>
+                                                    if (val == 12) {
+                                                        <br>
+                                                        return "Equal";
+                                                        <br>
+                                                    }
+                                                    <br>
+                                                    return "not Equal";
+                                                    <br>
+                                                }
+                                                <br>
+                                                testEqual(10);
+                                            </code>
+                                            <br><br>
+                                            To check if the value (10) is equal to 12 we use the equality operator "==" (a single "=" is the assignment operator).
+                                        </li>
+                                    <br>
+                                    </ul>
+                                    Comparison with strict equality operator
+                                    <ul>
+                                        <li>
+                                            The strict equality operator is the "==="
+                                        </li>
+                                        <li>
+                                            Does not do type conversion.
+                                            <br>
+                                            So while 2 == "2" will return true
+                                            <br>
+                                            2 === "2" will return false (diferent type).
+                                        </li>
+                                        <br>
+                                    </ul>
+                                    Comparison with inequality operator
+                                    <ul>
+                                        <li>
+                                            The inequality operator is "!=" (used instead of "==" or "===")
+                                        </li>
+                                        <li>
+                                            In the same way. The strict inequality operator is "!==" and does not convert types.
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    Greater than and less than
+                                    <ul>
+                                        <li> The operator woks like "val &gt; 12" or "val &lt;= 12" onstead of "=="</li>
+                                    </ul>
+                                    <br>
+                                    Logical <h5>AND</h5> operator
+                                    <ul>
+                                        <li>
+                                            Using two apersands "&&"
+                                        </li>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                function testAnd(val) {
+                                                    <br><br>
+                                                    if (val &lt;= 50 && val &gt;= 25) {
+                                                        <br>
+                                                        return "Yes";
+                                                        <br>
+                                                    }
+                                                    <br><br>
+                                                    return "No";
+                                                    <br>
+                                                }
+                                                <br><br>
+                                                testAnd(10);
+                                            </code>
+                                            <br><br>
+                                            Both statements have to be true to return "Yes".
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    Logical <h5>OR</h5> operator
+                                    <ul>
+                                        <li>
+                                            Using "||"
+                                        </li>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                function testOr(val) {
+                                                <br>
+                                                if (val &lt; 10 || val &gt; 20) {
+                                                    <br>
+                                                    return "Outside";
+                                                    <br>
+                                                }
+                                                <br>
+                                                return "Inside";
+                                                <br>
+                                            }
+                                            <br>
+                                            testOr(15);
+                                            </code>
+                                            <br><br>
+                                            Values smaller than 10 OR bigger than 20 will return "Outside".
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br>
+                            <h5>Else</h5> statements
+                            <ul>
+                                <li>
+                                    Usually if the IF statement is not met, nothing happens. Else statements allow us to do something in case the IF statement is not evlauated as true.
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function testElse(val) {
+                                            <br>
+                                            var result = "";
+                                            <br><br>
+                                            if (val &gt; 5) {
+                                                <br>
+                                                result = "Bigger than 5";
+                                                <br>
+                                            } else {
+                                                <br>
+                                                result = "5 or Smaller";
+                                                <br>
+                                            }
+                                            <br><br>
+                                            return result;
+                                            <br>
+                                        }
+                                        <br>
+                                        testElse(4);
+                                    </code>
+                                </li>
+                                <li>
+                                    Multiple conditions can be adressed by the <h5>Else If</h5> statement
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function testElseIF(val) {
+                                            <br><br>
+                                            if (val &gt; 10) {
+                                                <br>
+                                                return "Greater than 10";
+                                                <br>
+                                            } else if (val &lt; 5) {
+                                                <br>
+                                                return "Less than 5";
+                                                <br>
+                                            } else {
+                                                <br>
+                                                return "Between 5 and 10";
+                                                <br>
+                                            }
+                                            <br>
+                                        }
+                                        <br><br>
+                                        testElseIf(7);
+                                    </code>
+                                </li>
+                                <li>Careful with the order. Will check if the first IF statement is met (and not process the "Else If" if the first IF is met).</li>
+                                <li>
+                                    Chaining Else IF
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function testSize(num) {
+                                            <br><br>
+                                            if (num &lt; 5) {
+                                                <br>
+                                                return "Tiny"
+                                                <br>
+                                            } else if (num &lt; 10) {
+                                                <br>
+                                                return "Small";
+                                                <br>
+                                            } else if (num &lt; 15) {
+                                                <br>
+                                                return "Medium";
+                                                <br>
+                                            } else if (num &lt; 20) {
+                                                <br>
+                                                return "Large";
+                                                <br>
+                                            } else {
+                                                <br>
+                                                return "Huge";
+                                                <br>
+                                            }
+                                            <br>
+                                        }
+                                        <br>
+                                        console.log(testSize(7));
+                                    </code>
+                                </li>
+                            </ul>
+                            <br>
+                            Example (Golf Code)
+                            <ul>
+                                <li><code>
+                                    var names = ["Hole-in-one", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go home!"];
+                                    <br><br>
+                                    function golfScrore(par, strokes) {
+                                        <br>
+                                        if (strokes == 1) {
+                                            <br>
+                                            return names[0];
+                                            <br>
+                                        } else if (strokes &lt;= par - 2) {
+                                            <br>
+                                            return names[1];
+                                            <br>
+                                        } else if (strokes &lt;== par - 1) {
+                                            <br>
+                                            return names[2];
+                                            <br>
+                                        } else if (strokes == par) {
+                                            <br>
+                                            return names[3];
+                                            <br>
+                                        } else if (strokes par + 1) {
+                                            <br>
+                                            return names[4];
+                                            <br>
+                                        } else if (strokes == par + 2) {
+                                            <br>
+                                            return names[5];
+                                            <br>
+                                        } else if (strokes &gt;= par + 3) {
+                                            <br>
+                                            return names[5];
+                                            <br>
+                                        }
+                                        <br>
+                                    }
+                                    <br><br>
+                                    golfScore(5, 4);
+                                </code></li>
+                            </ul>
+                            <br>
+                            <h5>Switch</h5> statements
+                            <ul>
+                                <li>Instead of a chain of If statements</li>
+                                <li>
+                                    Replacing If Else Chains with Switch
+                                    <ul>
+                                        <li>
+                                            Ej: from<br>
+                                            
+                                            <code>
+                                                function chainToSwitch(val) {
+                                                    <br><br>
+                                                    var answer = "";
+                                                    <br><br>
+                                                    if (val === "bob") {
+                                                        <br>
+                                                        answer = "Marley";
+                                                        <br>
+                                                    } else if (val === 42) {
+                                                        <br>
+                                                        answer = "The Answer";
+                                                        <br>
+                                                    } else if (val === 1) {
+                                                        <br>
+                                                        answer = "There's no nº 1";
+                                                        <br>
+                                                    } else if (val === 99) {
+                                                        <br>
+                                                        answer = "Missed me by this much";
+                                                        <br>
+                                                    } else if (val === 7) {
+                                                        <br>
+                                                        answer = "Ate Nine";
+                                                        <br>
+                                                    }
+                                                    <br><br>
+                                                    return answer;
+                                                    <br>
+                                                }
+                                            </code>
+
+                                            <br><br>
+                                            to <br>
+
+                                            <code>
+                                                function chainToSwitch(val) {
+                                                    <br><br>
+                                                    var answer = "";
+                                                    <br><br>
+                                                    switch(val) {
+                                                        <br><br>
+                                                    case "bob":
+                                                        <br>
+                                                        answer = "Marley";
+                                                        <br>
+                                                        break;
+                                                        <br><br>
+                                                    case 42:
+                                                        <br>
+                                                        answer = "The Answer";
+                                                        <br>
+                                                        break;
+                                                        <br><br>
+                                                    case 1:
+                                                        <br>
+                                                        answer = "There's no nº 1";
+                                                        <br>
+                                                        break;
+                                                        <br><br>
+                                                    case 99:
+                                                        <br>
+                                                        answer = "Missed me by this much";
+                                                        <br>
+                                                        break;
+                                                        <br><br>
+                                                    case 7:
+                                                        <br>
+                                                        answer = "Ate Nine";
+                                                        <br>
+                                                        break;
+                                                        <br><br>
+                                                    }
+                                                    <br><br>
+                                                    return answer;
+                                                    <br>
+                                                }
+                                            </code>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Switch statements test a value and can have many case statements which define many possible values.
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        function chainToSwitch(val) {
+                                            <br><br>
+                                            var answer = "";
+                                            <br><br>
+                                            switch(val) {
+                                                <br>
+                                                case 1:
+                                                <br>
+                                                answer = "alpha";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case 2:
+                                                <br>
+                                                answer = "beta";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case 3:
+                                                <br>
+                                                answer = "gamma";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case 4:
+                                                <br>
+                                                answer = "delta";
+                                                <br>
+                                                break;
+                                                <br>
+                                                <br><br>
+                                                case 5:
+                                                <br>
+                                                answer = "omega";
+                                                <br>
+                                                break;
+                                                <br>
+                                            }
+                                            <br><br>
+                                            return answer;
+                                            <br>
+                                        }
+                                        <br><br>
+                                        console.log(caseInSwitch(1));
+                                    </code>
+                                    <br><br>
+                                    If you do not have a break statement it would set the answer to "alpha", then to "beta" and so forth.
+                                </li>
+                                <br>
+                                <li>Default option in Switch statements
+                                    <ul>
+                                        <li>The default is kinda like "Else" in an if - else statement.</li>
+                                        <li>
+                                            Ej: <br>
+                                    <code>
+                                        function switchOfStuff(val) {
+                                            <br><br>
+                                            var answer = "";
+                                            <br><br>
+                                            switch(val) {
+                                                <br>
+                                                case "a":
+                                                <br>
+                                                answer = "apple";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "b":
+                                                <br>
+                                                answer = "bird";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "c":
+                                                <br>
+                                                answer = "cat";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "d":
+                                                <br>
+                                                answer = "dog";
+                                                <br>
+                                                break;
+                                                <br>
+                                                <br><br>
+                                                case "e":
+                                                <br>
+                                                answer = "elephant";
+                                                <br>
+                                                break;
+                                                <br>
+                                            }
+                                            <br><br>
+                                            return answer;
+                                            <br>
+                                        }
+                                        <br><br>
+                                        console.log(switchOfStuff("a"));
+                                    </code>
+                                    <br><br>
+                                    If I do something like <br>
+                                    <code>
+                                        console.log(switchOfStuff(2));
+                                    </code>
+                                    <br> is gonna return "" because we put <br>
+                                    <code>
+                                        var answer = "";
+                                    </code>
+                                    <br> at the beggining, and we never "override" the answer because 2 does not match any of our cases. 
+                                    <br><br>Ej2: <br>
+                                    <code>
+                                        function switchOfStuff(val) {
+                                            <br><br>
+                                            var answer = "";
+                                            <br><br>
+                                            switch(val) {
+                                                <br>
+                                                case "a":
+                                                <br>
+                                                answer = "apple";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "b":
+                                                <br>
+                                                answer = "bird";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "c":
+                                                <br>
+                                                answer = "cat";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case "d":
+                                                <br>
+                                                answer = "dog";
+                                                <br>
+                                                break;
+                                                <br>
+                                                <br><br>
+                                                case "e":
+                                                <br>
+                                                answer = "elephant";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                default:
+                                                <br>
+                                                answer = "none-of-the-above";
+                                                <br>
+                                                break;
+                                            }
+                                            <br><br>
+                                            return answer;
+                                            <br>
+                                        }
+                                        <br><br>
+                                        console.log(switchOfStuff(6));
+                                    </code>
+                                    <br><br>
+                                    Now if it dont insert any of the cases it's gonna return "none-of-the-above";
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    Multiple Identical options with Switch statement
+                                    <ul>
+                                        <li>
+                                            So multiple inputs give the same output.
+                                        </li>
+                                        <li>
+                                            It's easy by ommiting the "break;" statement
+                                        </li>
+                                        <li>
+                                            Ej: <br>
+                                    <code>
+                                        function secuentialSizes(val) {
+                                            <br><br>
+                                            var answer = "";
+                                            <br><br>
+                                            switch(val) {
+                                                <br>
+                                                case 1:
+                                                <br>
+                                                case 2:
+                                                <br>
+                                                case 3:
+                                                <br>
+                                                answer = "Low";
+                                                <br>
+                                                break;
+                                                <br><br>
+                                                case 4:
+                                                <br>
+                                                case 5:
+                                                <br>
+                                                answer = "Medium";
+                                                <br>
+                                                break;
+                                            }
+                                            <br><br>
+                                            return answer;
+                                            <br>
+                                        }
+                                        <br><br>
+                                        console.log(secuentialSizes(3));
+                                    </code>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            <h5>Loops</h5>
+                            <ul>
+                                <li>
+                                    Utilizando las palabras clave while y for
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    (usualmente a la variable se la llama "i" pero para que se entienda vamos a llamarla "contador") <br>
+                                    (dentro del parentesis del while le ponemos la condicion para que frene el while).
+                                    <br>
+                                    <code>
+                                        let contador = 0; <br>
+                                        while(contador &lt; 5) {
+                                            <br><br>
+                                            console.log("accion repetida durante el Loop")
+                                            <br><br>
+                                            contador = contador + 1;
+                                        }
+                                    </code>
+                                    <br><br>
+                                    (tambien podriamos haber escrito <code>contador += 1;</code>)
+                                </li>
+                                <li>
+                                    Con el bucle "for" no hay que configurar el buckle manualmente.
+                                    <ul>
+                                        <li>
+                                            Ej: <br>
+                                            <code>
+                                                
+                                            </code>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>El buckle for tiene 3 partes:
+                                    <ul><li>
+                                        Inicializar el contador
+                                    </li></ul>
+                                </li>
+                                <li>
+                                    Ej: <br>
+                                    <code>
+                                        for(let contador - 0; contador &lt; 10; contador = contador + 1) {
+                                            <br><br>
+                                            console.log(contador);
+                                            <br><br>
+                                        }
+                                    </code>
+                                </li>
+                                <li>
+                                    <code>for contador = 1; <br>
+                                    while (contador &lt;= 10) {<br>
+                                        console.log(contador); <br>
+                                        contador - contador + 1;
+                                    <br>}</code>
+                                    <br>
+                                    Por convencion el contador comienza en cero. Y se utiliza "&lt; a x numero" en vez de &lt;= . El 10 sería nuestro techo. Si queremos que el contador empiece en 1 le debemos poner un &lt;= 10
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+
+
+                <br>
+                <hr>
+                <br>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="right docs">
+                <h5>Featured Content</h5>
+                <img src="../img/old_lock_hires-designerspics.jpeg" alt="">
+                <img src="../img/three-keys.png" alt="keys">
+                <img src="../img/molecule-2.png" alt="">
+
+                <br>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <footer id="bottom" class="footer">
+                <ul style="list-style-type: none;">
+                    <li>© Copyright 2023</li>
+                    <li>Homepage<br>(Footer)</li>
+                    <li> Top <a href="#top"><small><button><b>^</b></small></button></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

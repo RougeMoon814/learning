@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <!-- El normalize quita cualquier estilo que el navegador haya puesto por defecto a mi pagina.  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles-responsive.css" />
+    <!-- Bootstrap -->
+    <link refer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script refer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- Open Graph Data -->
+    <!-- OG es lo que aparece cuando copias el link en social media 
+            (Ej: Whatsapp), muestra link, imagen, descripcion, etc. 
+            Preferible tenerlo siempre. -->
+    <meta property="og:title" content="Document HTML Try v1" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="https://www.???.com/" />
+    <meta property="og:image" content="img/coffee.png" />
+    <meta property="og:description" content="Mi primer documento HTML">
+</head>
+
+<body>
+
+    <header id="top">
+        <!-- Back to Top^ Button -->
+        <div id="screen-size-top-tag"></div>
+        <div class="float-r" styles="border-margin 50%; position: fixed;">
+            <a role="button" href="#top"><button id="go-top">^</button></a>
+        </div>
+        <br>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary m-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" title="JC"><img class="navbar-img" alt="Site IMG"
+                        src="img/flat-paw-print.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-outline-info dropdown-toggle mx-1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Concepts
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#box-model">Box Model</a></li>
+                                <li><a class="dropdown-item" href="index.html#box-sizing">Box Sizing</a></li>
+                                <li><a class="dropdown-item" href="index.html#bem-method">BEM Method</a></li>
+                                <li><a class="dropdown-item" href="index.html#elements">Elementos</a></li>
+                                <li><a class="dropdown-item" href="index.html#links">Links</a></li>
+                                <li><a class="dropdown-item" href="index.html#paths">Paths</a></li>
+                                <li><a class="dropdown-item" href="index.html#text-change">Tipografia</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html#tabla">Tabla</a></li>
+                                <li><a class="dropdown-item" href="index.html#lista">Lista</a></li>
+                                <li><a class="dropdown-item" href="index.html#cursor">Cursor</a></li>
+                                <li><a class="dropdown-item" href="index.html#form-test">Formulario</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html#object-fit">Object Fit</a></li>
+                                <li><a class="dropdown-item" href="index.html#object-position">Obj Position</a></li>
+                                <li><a class="dropdown-item" href="index.html#overflow">Overflow</a></li>
+                                <li><a class="dropdown-item" href="index.html#float">Float</a></li>
+                                <li><a class="dropdown-item" href="index.html#position">Position</a></li>
+                                <li><a class="dropdown-item" href="index.html#display">Display</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html#transform">Transform</a></li>
+                                <li><a class="dropdown-item" href="index.html#transition">Transition</a></li>
+                                <li><a class="dropdown-item" href="index.html#animation">Animation</a></li>
+                                <li><a class="dropdown-item" href="index.html#challenges">Challenges</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Responsive
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="responsiveness.html">Responsiveness</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#view-port">Viewport</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#mobile-first">Mobile First</a>
+                                </li>
+                                <li><a class="dropdown-item" href="responsiveness.html#screen-grid">Screen Grid</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#media-queries">Media Queries</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Layout ~
+                                </li>
+                                <li><a class="dropdown-item" href="responsiveness.html#flex-box">Flexbox</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#grid-layout">Grid Layout</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Frameworks ~
+                                </li>
+                                <li><a class="dropdown-item" href="responsiveness.html#boot-strap">Bootstrap</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#tail-wind">Tailwind</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#w3-css">W3.CSS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~PreProcessors~
+                                </li>
+                                <li><a class="dropdown-item" href="responsiveness.html#sass">SASS</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#less">LESS</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#stylus">STYLUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn dropdown-toggle btn-outline-warning text-secondary"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Multimedia
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="multimedia.html#Img">Image</a></li>
+                                <li><a class="dropdown-item" href="multimedia.html#Audio">Audio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">~ Video ~
+                                </li>
+                                <li><a class="dropdown-item" href="multimedia.html#Video">Video</a></li>
+                                <li><a class="dropdown-item" href="multimedia.html#YouTube">Video (YouTube)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="multimedia.html#Vimeo">Video (Vimeo)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">Responsive Media
+                                </li>
+                                <li><a class="dropdown-item" href="multimedia.html#responsive-images">Responsive
+                                        Image</a></li>
+                                <li><a class="dropdown-item" href="multimedia.html#responsive-video">Responsive
+                                        Video</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-1">
+                            <button class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="index.html#challenges">Challenges</a></li>
+                                <li><a class="dropdown-item" href="projects/form-examples.html">Forms</a></li>
+                                <li><a class="dropdown-item" href="projects/landing-product-page.html">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="projects/restaurant-site.html">Restaurant</a></li>
+                                <li><a class="dropdown-item" href="projects/Blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="responsiveness.html#grid-example">Art Gallery</a>
+                                </li>
+                                <li><a class="dropdown-item" href="projects/parallax-site.html">Parallax</a></li>
+                                <li><a class="dropdown-item disabled" href="projects/search-bar.html">Search</a></li>
+                                <li><a class="dropdown-item" href="projects/homepage.html">Homepage</a></li>
+                                <li><a class="dropdown-item" href="projects/tribute-site.html">Tribute</a></li>
+                                <li><a class="dropdown-item" href="projects/music-store.html">Music Store</a></li>
+                                <li><a class="dropdown-item" href="projects/events-site.html">Events</a></li>
+                                <li><a class="dropdown-item" href="projects/CV.html">CV / Portfolio</a></li>
+                                <li><a class="dropdown-item" href="projects/wiki-docs.html">Docs / Wiki</a></li>
+                                <li><a class="dropdown-item" href="projects/calculator.html">Calculator</a></li>
+                                <li><a class="dropdown-item" href="projects/chess.html">Chess</a></li>
+                                <li><a class="dropdown-item" href="projects/proyecto-dnd/index.html"
+                                        title="Projecto de prueba relacionado con DnD. &nbsp; Para volver a este proyecto solo hay que poner 'Contact Me'.">D&D
+                                        Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">More</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex navbar-nav mx-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv-try.html#log-in">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#sign-in">SignIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv-try.html#log-in">Contact Me</a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <button><img title="Idioma Español" alt="Spain Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1280px-Bandera_de_Espa%C3%B1a.svg.png"
+                                    height="25px" /></button> |
+                            <button><img title="English Language" alt="UK Flag Img"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1920px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                                    height="25px" /></button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <h2>Responsiveness</h2>
+        <br>
+    </header>
+    <br>
+    <section class="menu-content-list">
+        <ol>
+            <li><a href="#responsive-concepts">Responsive Web Desing</a>
+            <ul>
+                <li><a href="#responsive-links">Links</a></li>
+                <li><a href="#mobile-first">Mobile First</a></li>
+                <li><a href="#viewport">Viewport</a></li>
+                <li><a href="#screen-grid">Grid View</a></li>
+            </ul>
+            </li>
+            <li><a href="#media-queries">Media Queries</a></li>
+            <li>Layout
+                <ul>
+                    <li><a href="#flex-box">Flexbox</a>
+                    <ul>
+                        <li><a href="#flex-container-concepts">Propiedades del Contenedor</a></li>
+                        <li><a href="#flex-items-concepts">Propiedades de los Flex-Items</a></li>
+                        <li><a href="#flex-example">Ejemplo (Formulario)</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#grid-layout">Grid Layout</a>
+                        <ul>
+                            <li><a href="#grid-container-concepts">Propiedades del Contenedor</a></li>
+                            <li><a href="#grid-container-concepts">Propiedades de los Items</a> </li>
+                            <li><a href="#grid-example1">Ejemplo 1 (Gallery)</a> </li>
+                            <li><a href="#grid-example2">Ejemplo 2 (Gallery)</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>CSS Frameworks
+                <ul>
+                    <li><a href="#boot-strap">Bootstrap</a></li>
+                    <li><a href="#tail-wind">Tailwind</a></li>
+                    <li><a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a></li>
+                    <li>etc</li>
+                </ul>
+            </li>
+            <li>CSS Pre-Processors
+                <ul>
+                    <li><a href="#sass">SASS</a></li>
+                    <li><a href="#less">LESS</a></li>
+                    <li><a href="#stylus">STYLUS</a></li>
+                    <li>etc</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <br>
+    
+    <section>
+        <h4 id="responsive-concepts">Responsive Concepts</h4>
+        <div id="responsive-links">
+            <ul>
+                <li>Responsive web design makes your web page look good on all devices. It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen.</li>
+                <li>Responsive web design uses only HTML and CSS. Responsive web design is not a program or a JavaScript.</li>
+                <li>Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size. (Ej: a large screen is above 992px wide)</li>
+            </ul>
+            <h5>Links:</h5>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_rwd_intro.asp">W3schools Responsive Web Design (Intro)</a></li>
+                <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">W3schools Media Queries</a></li>
+                <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">W3schools Flexbox</a></li>
+                <li><a href="https://www.w3schools.com/css/css_grid.asp">W3schools Grid</a></li>
+                <li><a href="https://www.w3schools.com/bootstrap5/index.php">W3schools Bootstrap 5</a></li>
+                <li><a href="https://www.w3schools.com/sass/default.php">W3schools SASS</a></li>
+                <li><a href="https://www.w3schools.com/css/css_rwd_templates.asp">W3schools Responsive Web Design (Templates)</a></li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5 id="mobile-first">Mobile First</h5>
+            <ul>
+                <li>Is a technique. Means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).</li>
+                <li>Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px.</li>
+                <li>Mobile first, responsive design is the goal. <br>
+                    Bootstrap's CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5 id="view-port">The Viewport</h5>
+
+        </div>
+        <br>
+        <div>
+            <h5 id="screen-grid">Grid View & Breakpoints</h5>
+            <ul>
+                <li>The browsers divide the screen / viewport in 12 to 16 columns (Usually we work in 12).</li>
+                <li>This is useful to make some columns / sidebars on Desktop PC become a single column in Mobile Phones</li>
+                <li>Bootstrap works with 12 and also 5 (6) categories
+                    <ul>
+                        <li>XS - Extra Small</li>
+                        <li>SM - Small</li>
+                        <li>MD - Medium</li>
+                        <li>LG - Large</li>
+                        <li>XL - Extra Large</li>
+                        <li>XXL - Extra Extra Large</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+            <h4 id="media-queries">Media Queries</h4>
+            <div>
+                <ul>
+                    <li><a href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp">W3schools Media Queries Examples</a></li>
+                    <li>
+                        The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.  <br>
+                        Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.</li>
+                    <li>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones). <br>
+                        Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use min-width in our media queries.</li>
+                    <li>Media queries can be used to check many things, such as:
+                        <ul>
+                            <li>width and height of the viewport</li>
+                            <li>width and height of the device</li>
+                            <li>orientation (is the tablet/phone in landscape or portrait mode?)
+                                <ul><li>Ej: <br><code>
+                                    @media only screen and (orientation: landscape) {
+                                        body {
+                                        background-color: lightblue;
+                                        }
+                                    }
+                                </code></li></ul>
+                            </li>
+                            <li>resolution</li>
+                        </ul>
+                    </li>
+                    <li>
+                        The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. <br> 
+                        When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules. <br>
+                        Unless you use the not or only operators, the media type is optional and the all type will be implied. <br>
+                        We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint. You can add as many breakpoints as you like.<br>
+                    </li>
+                    <li>One way to use media queries is to have an alternate CSS section right inside your style sheet.</li>
+                    <li>Ej: <br><code>
+                        @media not|only mediatype and (expressions) {
+                            CSS-Code;
+                        }
+                    </code></li>
+                    <li>Media Types
+                        <ul>
+                            <li>all</li>
+                            <li>print (for printers)</li>
+                            <li>screen</li>
+                            <li>speech (for screenreaders)</li>
+                            <li>You can have different stylesheets for different media: <br><code>
+                                    &lt;link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"&gt;
+                                </code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>It might seem odd that we have two sets of identical classes, but it gives us the opportunity <i>in HTML</i>, to decide what will happen with the columns at each breakpoint
+                    <ul>
+                        <li>Ej: <br>
+                            (For desktop) The first and the third section will both span 3 columns each. The middle section will span 6 columns. <br>
+                            (For tablets) The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns
+                            <p><code>
+                                &lt;div class="row"&gt; <br>
+                                    &lt;div class="col-3 col-s-3"&gt;...&lt;/div&gt;<br>
+                                    &lt;div class="col-6 col-s-9"&gt;...&lt;/div&gt;<br>
+                                    &lt;div class="col-3 col-s-12"&gt;...&lt;/div&gt;<br>
+                                &lt;/div&gt;
+                            </code></p>
+                        </li>
+                    </ul></li>
+                    <li>Typical Device Breakpoints
+                        <ul>
+                            <li>(Many. To keep things simple you could target five groups:)</li>
+                            <li>/* Extra small devices (phones, 576px and down) */ <br>
+                                @media only screen and (max-width: 576px) {...}</li>
+                            <li>/* Small devices (portrait tablets and large phones, 576px and up) */ <br>
+                                @media only screen and (min-width: 576px) {...}</li>
+                            <li>/* Medium devices (landscape tablets, 768px and up) */ <br>
+                                @media only screen and (min-width: 768px) {...}</li>
+                            <li>/* Large devices (laptops/desktops, 992px and up) */ <br>
+                                @media only screen and (min-width: 992px) {...}</li>
+                            <li>/* Extra large devices (large laptops and desktops, 1200px and up) */ <br>
+                                @media only screen and (min-width: 1200px) {...}</li>
+                            <li>/* Extra Extra large devices (large desktops and TVs, 1400px/1600px/1900px and up) */ <br>
+                                @media only screen and (min-width: 1600px) {...}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h4>Layout</h4>
+        <br>
+        <h5 id="flex-box" >Flexbox</h5>
+        <div>
+            CSS Flexible Box Layout
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flexbox (W3Schools)</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox (developer.mozilla.org)</a>
+                </li>
+                <li>
+                    <a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a>
+                </li>
+                <li>
+                    <a href="https://www.digitalocean.com/community/cheatsheets/css-flexbox?utm_medium=content_acq&utm_source=css-tricks&utm_campaign=&utm_content=awareness_bestsellers">A CSS Flexbox Cheatsheet (digitalocean)</a>
+                </li>
+                <li>
+                    <a href="https://www.digitalocean.com/community/tutorials/css-centering-using-flexbox?utm_medium=content_acq&utm_source=css-tricks&utm_campaign=&utm_content=awareness_bestsellers">Centering Things in CSS Using Flexbox (digitalocean)</a>
+                </li>
+            </ul>
+            <br>
+            <div>
+                <p style="text-align: center;">justify content | align-items | align-content | gap, row-gap, column-gap</p>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="flexbox img 1 (justify content)" title="justify content" width="200px">
+                <img alt="flexbox img 2 (align-items)" title="align-items"  width="250px" src="data:image/png;base64,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" />
+                <img alt="flexbox img 3 (align-content)" title="align-content"  width="250px" src="data:image/png;base64,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" alt="flexbox img 5" />
+                <img alt="flexbox img 4 (gap, row-gap, column-gap)" title="gap, row-gap, column-gap"  width="250px"  src="https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg" />
+            </div>
+            <br>
+                <ul>
+                    <li>Flexbox viene de "caja flexible".</li>
+                    <li>Antes de hacian layouts con Tablas, o con float.</li>
+                    <li>Actualmente se usa Flexbox y Grid. Lo mejor es uasr una combinacion de los dos.</li>
+                </ul>
+                <ul>
+                    <li>Esta compuesto de un Flex Container y un Flex Item</li>
+                    <li>Si le damos <code>display: flex;</code>  a cualquier elemento se comporta como un <code>display: block;</code></li>
+                    <li>Vamos a notar los cambios [en los items] dentro del contenedor.</li>
+                    <li>Eje X (Main Axis) y Eje Y (Cross Axis). MAs que un eje es un vector (implica que hay una direccion hacia donde apunta).
+                        <ul>
+                            <li> Main Start | Main End -&gt;</li>
+                            <li> Cross Start | Cross End v</li>
+                            <li>Con CSS cambiamos el flujo estos axis (ejes)</li>
+                            <li>Por defecto los elementos vienen en el main axis horizontal</li>
+                        </ul>
+                    </li>
+                    <li>Los Flex-Items son solo los hijos directos del elemento (no los nietos y demas).
+                        <ul>
+                            <li>
+                                Si tenemos un &lt;p&gt; un &lt;b&gt; y un &lt;div&gt; (y un &lt;p&gt; adentro de ese &lt;div&gt;), Los tre primeros son flex-items pero el p dentro del div no es un flex-item.
+                            </li>
+                            <li>Sin embargo no tendriamos problemas de altura como con dos <code>float</code> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            Ej:
+            <br>
+            <div class="flex-container1">
+                <div class="flex-item1">
+                    flex-item1 dentro de un flex-container con display: flex; <br>
+                    Amet natus doloribus, tenetur ab deserunt iure soluta blanditiis quia aliquid dolorem! Explicabo, dolorum natus autem perferendis ab repudiandae aut optio suscipit.
+                </div>
+                <div class="flex-item1">
+                    Otro flex-item1 dentro de un flex-container con display: flex; <br>
+                    Explicabo, dolorum natus autem perferendis ab repudiandae aut optio suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis aliquam, aperiam sed animi magnam quisquam, doloribus dignissimos quaerat consequatur explicabo, eius praesentium maxime nam architecto voluptatibus quos consequuntur maiores.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+            </div>
+            <ul>
+                <li>Intenta mentener las alturas de acuerdo al contenido</li>
+                <li>Esto se puede cambiar con flex-growth</li>
+                <li>Sin un valor de width desaparecerian (las sig. "cajas"). No las estamos declarando como tal al contenido.</li>
+                <li>Las "cajas" se ajustan un poco cuando comprimo la pantalla.
+                    <ul>
+                        <li>Que ocurre si no quiero eso?</li>
+                        <li>Al container le doy <code>flex-wrap: wrap;</code></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="flex-container2">
+                <div class="flex-item2">
+                    Amet natus doloribus!
+                </div>
+                <div class="flex-item2">
+                    Magnam aut veniam.
+                </div>
+                <div class="flex-item2">
+                    Tenetur ab deserunt!
+                </div>
+                <div class="flex-item2">
+                    Odit rem nemo facere.
+                </div>
+                <div class="flex-item2">
+                    Amet natus doloribus!
+                </div>
+                <div class="flex-item2">
+                    Magnam aut veniam.
+                </div>
+            </div>
+            <div class="flex-container3">
+                <div class="flex-item3">
+                    Container con <br>flex-wrap: wrap;
+                </div>
+                <div class="flex-item3">
+                    Magnam aut veniam.
+                </div>
+                <div class="flex-item3">
+                    Tenetur ab deserunt!
+                </div>
+                <div class="flex-item3">
+                    Odit rem nemo facere.
+                </div>
+                <div class="flex-item3">
+                    Amet natus doloribus!
+                </div>
+                <div class="flex-item3">
+                    Magnam aut veniam.
+                </div>
+            </div>
+            <br>
+            <!-- Propiedades del Contenedor -->
+            <h6 id="flex-container-concepts">Propiedades del Contenedor</h6>
+            <div class="container-float">
+                <img src="https://preview.redd.it/rofzm44oka091.png?auto=webp&s=99a6ec87e79b8ad7d6b614c95e8a65933fadca4d" alt="float img 1">
+                <ul>
+                    <li><h6>Flex-Direction</h6>
+                    <ul>
+                        <li>Quiero rotarlas? Solo necesito cambiar la direccion del main axis (en vez de usar transform u otra cosa rara).</li>
+                        <li>Si uno no esta en vertical, obligatoriamente esta en horizontal y viceversa.</li>
+                        <li>Es una propiedad del contenedor.</li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>row (filas, por defecto)</li>
+                        <li>column</li>
+                        <li>row-reverse (filas en espejo)</li>
+                        <li>column-reverse (columnas en espejo)</li>
+                    </ul>
+                    <br>
+                        <ul>Otros propiedades del contenedor incluyen:
+                            <li><h6>Flex-Flow</h6>
+                                <ul>
+                                    <li>Abrevia las propiedades de flex-direction y flex-wrap</li>
+                                    <li>Conviene solo usarlo si voy a cambiar ambos valores.</li>
+                                    <li>Ej: <code>flex-flow: flex-direction flex-wrap;</code> </li>
+                                </ul>
+                            </li>
+                            <li><h6>Flex-Wrap</h6>
+                                <ul>
+                                    <li>nowrap (valor por defecto)</li>
+                                    <li>Wrap (respeta ancho especifico, no comprime las "cajas", sino que las tira para abajo)</li>
+                                    <li>Wrap-Reverse (cuando achico la ventana las "cajas" se van para arriba)</li>
+                                </ul>
+                            </li>
+                            <li><h6>Justify-Content</h6>
+                                <ul>
+                                    <li>flex-start</li>
+                                    <li>center (las cajas se centran, agrupadas, en el medio)</li>
+                                    <li>flex-end</li>
+                                    <li>space-between ("cajas" separadas a la misma distancia lo que mas se pueda)</li>
+                                    <li>space-around (Espacio igual entre las "cajas" y los bordes, aunque los espacios de los limites son la mitad. Similar a un margin: auto;)</li>
+                                    <li>space-evenly (Espacio igual entre las "cajas" y los bordes)</li>
+                                </ul>
+                            </li>
+                            <br>
+                            Las siguientes se utilizan para alinear en el cross axis (Se nota mas si le damos al container <code>height: 100vh;</code>)
+                            <li><h6>Align-Items</h6> (para alinear en el Cross Axis. Cuando hay una linea de flex-items)
+                                <ul>
+                                    <li>stretch (propiedad por defecto)
+                                        <ul>
+                                            <li>Me estira las "cajas" hasta en el cross axis (si los flex-items no tuviesen un height asignado)</li>
+                                        </ul>
+                                    </li>
+                                    <li>flex-start
+                                        <ul>
+                                            <li>Me comprime las "cajas" hasta lo minimo, texto si lo hubiera (si los flex-items no tuviesen un height asignado)</li>
+                                        </ul>
+                                    </li>
+                                    <li>center (se centra verticalmente)</li>
+                                    <li>flex-end</li>
+                                    <li>Baseline / Cross axis</li>
+                                </ul>
+                            </li>
+                            <li><h6>Align-Content</h6> (para alinear en el Cross Axis. Cuando hay mas de una linea de flex-items)
+                                <ul>
+                                    <li>los mismos que en caso de Align-Items</li>
+                                    <li>Si tuviese varia lineas de items (porque achique la ventana, por ejemplo), utilizar align-content va a prevenir que las "cajas" de la segunda y siguientes lineas se me traten de alinear al centro.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            Si achicas la ventana verás como las ventanas se alinean al centro (notese el espacio grande entre la primera fila y la segunda)
+            <div class="flex-container4">
+                <div class="flex-item4">
+                    Container con <br>display: flex;
+                </div>
+                <div class="flex-item4">
+                    justify-content: <br>space-evenly;
+                </div>
+                <div class="flex-item4">
+                    flex-wrap: wrap;
+                </div>
+                <div class="flex-item4">
+                    height: 40vh;
+                </div>
+                <div class="flex-item4">
+                    align-items: <br>flex-start;
+                </div>
+                <div class="flex-item4">
+                    texto extra
+                </div>
+                <div class="flex-item4">
+                    texto extra
+                </div>
+                <div class="flex-item4">
+                    texto extra
+                </div>
+            </div>
+            Si achicas la ventana verás como las ventanas se alinean arriba (start), como deberian.
+            <div class="flex-container5">
+                <div class="flex-item5">
+                    Container con <br>display: flex;
+                </div>
+                <div class="flex-item5">
+                    justify-content: <br>space-evenly;
+                </div>
+                <div class="flex-item5">
+                    flex-wrap: wrap;
+                </div>
+                <div class="flex-item5">
+                    height: 40vh;
+                </div>
+                <div class="flex-item5">
+                    align-content: <br>flex-start;
+                </div>
+                <div class="flex-item5">
+                    texto extra
+                </div>
+                <div class="flex-item5">
+                    texto extra
+                </div>
+                <div class="flex-item5">
+                    texto extra
+                </div>
+            </div>
+            El efecto contrario (las "cajas" abajo y que suban cuando achico ventana) se logran con <code>align-content: baseline;</code>(y no flex-end) y <code>flex-wrap: wrap-reverse;</code>
+            <br><br>
+            <h6 id="flex-items-concepts">Propiedades de los flex-items</h6>
+            <ul>
+                <li><h6>Margin</h6>
+                    <ul>
+                        <li>El margin dentro de un flex-item se comporta distinto.</li>
+                        <li>Ej: <code>margin-left: auto;</code> directamente me lo manda al otro lado (derecha).</li>
+                        <li><code>margin-top: auto;</code> y <code>margin-bottom: auto;</code> hará que se centre verticalmente</li>
+                        <li><code>margin: auto;</code> hará que se centre de todas la direcciones.</li>
+                    </ul>
+                </li>
+                <li><h6>Align-self</h6>
+                    <ul>
+                        <li>(recordar que es alineacion en el Cross-Axis)</li>
+                    </ul>
+                </li>
+                <li><h6>Flex-Grow</h6>
+                    <ul>
+                        <li>Agarra el espacio "sobrante" y lo reparte entre las "cajas"</li>
+                        <li>Ej: <br>
+                            <div class="flex-container6">
+                                <div class="flex-item6">
+                                    Caja Flexible
+                                </div>
+                                <div class="flex-item6">
+                                    Caja Flexible
+                                </div>
+                                <div class="flex-item6">
+                                    Caja Flexible
+                                </div>
+                            </div>
+                        </li>
+                        <li>Podemos combinarlo con <code>flex-wrap: wrap;</code> para que cuando lo achique hasta el min-width que puede la caja me la pase para abajo.</li>
+                        <li>Si le dox todo el flex-grow a una caja en particular pasa esto: <br>
+                            <div class="flex-container7">
+                                <div class="flex-item7 grow-individual">
+                                    Caja Flexible
+                                </div>
+                                <div class="flex-item7">
+                                    Caja Flexible
+                                </div>
+                                <div class="flex-item7">
+                                    Caja Flexible
+                                </div>
+                            </div>
+                        </li>
+                        <li>Tambien le puedo dar el espacio a la primera y a la ultima caja, por ejemplo.</li>
+                        <li>Adicionalmente, si le pongo a la primera caja <code>flex-grow: 1;</code> y a la ultima caja <code>flex-grow: 2;</code> ahora el espacio disponible (no ocupado por la caja del medio) va a res repartido en tres.
+                        <br>
+                        <div class="flex-container8">
+                            <div class="flex-item8 grow-individual">
+                                flex-grow: 1;
+                            </div>
+                            <div class="flex-item8">
+                                .
+                            </div>
+                            <div class="flex-item8 grow-double">
+                                flex-grow: 2;
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><h6>Flex-Basis</h6>
+                <ul>
+                    <li>
+                        Como el width pero mas importante.
+                    </li>
+                    <li>Si tengo ambas propiedades pero con valores distintos se le va a prestar a tencion al Flex-Basis.</li>
+                    <li>Recomendable utilizarlo en lugar del width (por otras propiedades que veremos mas adelante).</li>
+                    <li>Solo se empieza a repartir el espacio sobrante (con flex-grow) cuando todas las cajas alcancen el espacio asignado.</li>
+                </ul></li>
+                <li><h6>Flex-Shrink</h6>
+                <ul>
+                    <li>
+                        Por defecto todas ceden un espacio de "1" de flex-shrink.
+                    </li>
+                    <li>
+                        Pero si a una de las cajas le pongo <code>flex-shrink: 2;</code> esa caja va a ceder el doble de espacio que las otras, para que las demás puedan ajustarse.
+                        <br>
+                        Pero eso si tienen menos que el width definido (Ej: 300px). A ese ancho definido van a "llegar" todas las cajas juntas.
+                    </li>
+                    <li>Si le pongo <code>flex-shrink: 3;</code> entregaría el triple de espacio, mientras que <code>flex-shrink: 0.5;</code> entrega la mitad, y asi sucesivamente.</li>
+                    <li>Si pongo explicitamente <code>flex-shrink: 0;</code> no va a ceder nada de espacio y las que van a tener que ajustarse son als otras cajas.</li>
+                </ul></li>
+                <li><h6>Flex</h6>
+                    <ul>
+                        <li>Es una abreviacion. Necesita por lo menos un parametro.</li>
+                        <li>Agrupa flex-grow, flex-shrink, y flex-basis</li>
+                        <li>Ej: <br>
+                        <code>flex: 1 0 350px;</code></li>
+                    </ul>
+                </li>
+                <li><h6>Order</h6>
+                    <ul>
+                        <li>Como el Z-index pero en el eje del main axis. O como un orden ascendente, "de menor a mayor" (salvo que lo revirtamos).</li>
+                        <li>El que tenga el valor mas grande va al final</li>
+                        <li>Ej: Si a alguno de los flex-items le doy un <code>order: 4;</code> ese elemento va a ir al final de la fila (o columna). <br>
+                            O va a ser el primero si estoy utilizando <code>flex-direction: row-reverse;</code></li>
+                            <li>Muy util, especialmente si cuando quiero que se haga responsive las cajas tengan posiciones distintas.</li>
+                    </ul>
+                </li>
+                <li>(etc)</li>
+            </ul>
+            <br><hr><br>
+            
+            <!-- Practica con Flex (formulario de mail) -->
+            <h6 id="flex-example" >Práctica con Flex</h6>
+            <div class="practica-flex">
+                <br>
+                <div class="flex-container9">
+                    <form class="form">
+                        <div class="form__section">
+                            <input class="form__input" type="email" placeholder="Escriba su Email">
+                        </div>
+                        <div class="form__section">
+                            <input class="form__input" type="text" placeholder="Escriba Asunto">
+                        </div>
+                        <div class="form__section">
+                            <textarea class="form__input" placeholder="Escriba su mensaje"></textarea>
+                        </div>
+                        <div class="form__section">
+                            <input type="submit" class="form__input" value="Enviar">
+                        </div>
+                    </form>
+                    <div class="form-img">
+                        <img src="img/envelope.png" alt="">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br><hr><br>
+        <h5 id="grid-layout">Grid Layout</h5>
+        <div>
+            <ul>
+                <li>
+                    Mientras que Flexbox ordena en una linea (fila o columna), Grid Layout ordena en filas y columnas, por lo que lo pordriamos considerar mas potente. <br>
+                    Sin embargo, la mejor práctica es utilizar una combinacion de Flexbox y Grid.
+                </li>
+                <li>Estilo de Layout que se realiza a traves de grillas (como una tabla)</li>
+                <li>Es un valor de display. <br>
+                    Ej: <code>display: grid;</code></li>
+                <li><a href="https://css-tricks.com/seamless-responsive-photo-grid/">(CSS Tricks) Seamless Responsive Photo Grid</a></li>
+                <li><a href="https://css-tricks.com/exploring-css-grids-implicit-grid-and-auto-placement-powers/">(CSS Tricks) Exploring CSS Grid's Implicit Grid and Auto-Placement Powers</a></li>
+            </ul>
+            <div>
+                <h6>Conceptos</h6>
+                <ul>
+                    <li>
+                        <h6>Grid Container</h6>
+                        <ul>
+                            <li>Toda la grilla (toda la tabla)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Grid Item</h6>
+                        <ul>
+                            <li>Solo los hijos directos de un Grid Container son Grid Items (como en flexbox), no los nietos
+                                y demás.</li>
+                            <li>Cada una de las partes del container (Grid-container) es un grid-item</li>
+                            <li>Pueden estar dentro o fuera de las celdas, puede haber mas de uno en una celda, etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Grid Cell</h6>
+                        <ul>
+                            <li>Comu una celda (cell)</li>
+                            <li>Como un Grid Item pero no necesariamente.
+                                <ul>
+                                    <li>Podemos tener una tabla con dos columnas y dos filas (osea 4 celdas), pero solo un
+                                        item adentro.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Grid Tracks</h6>
+                        <ul>
+                            <li>Dos Tipos: Grid Column y Grid Row</li>
+                            <li>Grid Tracks = Filas + Columnas</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6>Grid Area</h6>
+                        <ul>
+                            <li>Las definimos nosostros, no estan definidas por defecto.</li>
+                            <li>Tendria sentido que ocupen mas de una celda</li>
+                            <li>Area de filas y columnas consecutiva (no diagonal, ni cosas como "L").
+                            </li>
+                            <li>
+                                Puede ser la enteridad de una fila o un area cuadrada formada por celdas de diferentes filas
+                                y columnas
+                                <ul>
+                                    <li>Ej: Celda11, celda12, celda21, y celda22, en un grid 8x8 (osea seria el area del
+                                        cuadrado de las primeras 4 celdas)</li>
+                                </ul>
+                                </li>
+                                <li>
+                                    Ej: <code>
+                                        grid-template-areas: <br>
+                                        'header header header header header header' <br>
+                                        'left middle middle middle middle right' <br>
+                                        'footer footer footer footer footer footer';
+                                    </code>
+                                </li>
+                                </ul>
+                    </li>
+                    <li>
+                        <h6>Grid Line (Column / Row)</h6>
+                        <ul>
+                            <li>La cantidad de lineas incluye los bordes que delimitan la grilla / tabla</li>
+                            <li>Cual es la primera linea divisoria de las columnas? <br>
+                                No la que divide la columna 1 y la columna 2, sino el "borde" de la grilla</li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h6>Unidades</h6>
+                <ul>
+                    <li>Podemos usar pixeles, rem, etc.</li>
+                    <li>"auto"</li>
+                    <li>fr
+                        <ul>
+                            <li>Es como una "fraccion del row" (que en el caso de que no tengamos nada más, sería todo el row).</li>
+                            <li>Se lo suele aplicar a las columnas</li>
+                            <li>Ej: <code>grid-template-columns: 150px 150px 1fr;</code> va a hacer que las dos primeras
+                                columnas tienen su tamaño fijo y la ultima se va a "extender" por el resto del ancho
+                                disponible.</li>
+                        </ul>
+                    </li>
+                    <li>repeat
+                        <ul>
+                            <li>Nos permite crear filas y columnas mas fácil</li>
+                            <li>Ej: <br>
+                                En vez de escribir <code>grid-template-columns: 150px 150px 150px 1fr;</code> (4 columnas) escribo
+                                cantidad y unidad <br>
+                                <code>grid-template-columns: repeat(3, 150px) 1fr;</code>
+                            </li>
+                            <li>
+                                Escribir <code>grid-template-columns: repeat(3, 100px 200px);</code> nos crearía 6 columnas
+                                repetidas.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h6>Grid Implícito</h6>
+                <ul>
+                    <li>
+                        Cuando una de las celdas se nos va para abajo (fuera de la "tabla normal") va a formar parte de el
+                        grid implicito y va a tener nuevas propiedades.
+                    </li>
+                    <li>
+                        Por defecto, lo que "sobra" se crea como una fila
+                    </li>
+                </ul>
+                <ul>
+                    <li>grid-auto-rows
+                        <ul>
+                            <li>Igual que el template</li>
+                            <li>No funciona con el repeat.</li>
+                            <li>Ej: me sobran 3 celdas. En el <code>.grid-container</code> pongo además algo como
+                                <code>grid-auto-rows: 200px;</code></li>
+                        </ul>
+                    </li>
+                    <li>grid-auto-columns
+                        <ul>
+                            <li>Igual que el template</li>
+                        </ul>
+                    </li>
+                    <li>grid-auto-flow
+                        <ul>
+                            <li>Como queremos que se comporten las celdas que "sobren" (implícitas).</li>
+                            <li>Row (default)
+                                <ul>
+                                    <li>Me las agrega como una nueva fila.</li>
+                                </ul>
+                            </li>
+                            <li>Column
+                                <ul>
+                                    <li>Me las agrega como una nueva columna.</li>
+                                </ul>
+                            </li>
+                            <li>Dense
+                                <ul>
+                                    <li>Me rellena los espacios vacios que pudiesen ser creados por grid implicito.</li>
+                                    <li>La vieja confiable ;)</li>
+                                    <li>Why not always add this property by default? In some cases, we don't want that behavior. It causes items to flow “out-of-order” to fill holes left by larger items. Visual order is usually just as important as the source order, particularly when it comes to accessible interfaces, and grid-auto-flow: dense can sometimes cause a mismatch between the visual and source order.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h6 id="grid-container-concepts">Propiedades del Container</h6>
+                <ul>
+                    <li>grid-template-rows
+                        <ul>
+                            <li>Ej: <code>grid-template-rows: 150px 150px 150px;</code><br>
+                                Hará que las primeras 3 filas tengan 150px cada una. <br>
+                                El resto es grid implícito, osea grid que no estamos programando.</li>
+                        </ul>
+                    </li>
+                    <li>grid-template-columns
+                        <ul>
+                            <li>(Lo mismo que el anterior pero con columnas)</li>
+                        </ul>
+                    </li>
+                    <li>grid-template (shorthand)</li>
+                    <br>
+                    <li>grid-row-gap
+                        <ul>
+                            <li>Como un margin pero entre celdas.</li>
+                            <li>Se separan entre ellas pero no de los bordes.</li>
+                        </ul>
+                    </li>
+                    <li>grid-column-gap
+                        <ul>
+                            <li>
+                                Mismo que el anterior pero para los espacios entre las columnas.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>grid-gap: row column; (shorthand)</li>
+                </ul>
+                <br>
+                <h6 id="grid-items-concepts">Propiedades de los Items</h6>
+                <ul>
+                    <li>grid-row-start</li>
+                    <li>grid-row-end</li>
+                    <li>grid-column-start</li>
+                    <li>grid-column-end</li>
+                    <li>grid-row (shorthand)
+                        <ul>
+                            <li>
+                                <code>grid-row: 1 / 3;</code>
+                                es un shorthand de
+                                <code>grid-row-start: 1; grid-row-end: 3;</code>
+                            </li>
+                            <li>
+                                Alternativamente puedo escribir algo como <code>grid-row: 1 / span 3;</code>.
+                                <ul>
+                                    <li>
+                                        En este caso me cuenta las celdas y no las lineas (por lo que en el caso anterior
+                                        ocupabamos 2 filas, y en este ocupamos 3 filas).
+                                    </li>
+                                    <li>
+                                        Le indico de que linea voy a empezar (1) y cuantas celda voy a ocupar (span 2)
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>grid-column (shorthand)</li>
+                </ul>
+            </div>
+            <section class="grids">
+                <!-- Pruebas -->
+                Grilla 1 <br>
+                (En este caso tambien pusimos <code>grid-column: 1 / 3;</code> por lo que las celdas se fueron "empujando". Pero
+                tambien le agregamos un <code>grid-row: 1 / 3;</code> por lo que ahora se expande a la fila de abajo, y no queda
+                tan mal.)
+                <code>
+                    <p>.grid-container1 {
+                        display: grid;
+                        border: 5px solid black;
+                        grid-template-rows: 50px 50px 50px;
+                        grid-template-columns: 50px 50px 1fr;
+                        background-color: hsl(30, 100%, 99%);
+                        }
+                        </p>
+                        <p>
+                            .grid-item1 {
+                            border: 1px solid black;
+                            }
+                        </p>
+                        <p>
+                            .grid-item1:first-child {
+                            background: gray;
+                            grid-column: 1 / 3;
+                            grid-row: 1 / 3;
+                            }
+                        </p>
+                        <p>
+                            .grid-item1:nth-child(2) {
+                            background:dimgray;
+                            grid-column: 3 / 5;
+                            grid-row: 1 /3;
+                            }
+                        </p>
+                        </code>
+                <div class="grid-container1">
+                    <div class="grid-item1">1</div>
+                    <div class="grid-item1">2</div>
+                    <div class="grid-item1">3</div>
+                    <div class="grid-item1">4</div>
+                    <div class="grid-item1">5</div>
+                    <div class="grid-item1">6</div>
+                    <div class="grid-item1">7</div>
+                    <div class="grid-item1">8</div>
+                    <div class="grid-item1">9</div>
+                </div>
+                <br>
+                Grilla 2
+                (Grilla con grid-gap)
+                <div class="grid-container2">
+                    <div class="grid-item2">1</div>
+                    <div class="grid-item2">2</div>
+                    <div class="grid-item2">3</div>
+                    <div class="grid-item2">4</div>
+                    <div class="grid-item2">5</div>
+                    <div class="grid-item2">6</div>
+                    <div class="grid-item2">7</div>
+                    <div class="grid-item2">8</div>
+                    <div class="grid-item2">9</div>
+                </div>
+            <br>
+                <h6>Grid Dinámico</h6>
+                <ul>
+                    <li>Trabajar con estructuras dinamicas.</li>
+                    <li>Columnas y estructuras auto-ajustables.</li>
+                    <li>Aunque comprimamos la grilla, por defecto esta separa el contenido en palabras y no se achicará más que
+                        la palabra mas grande.</li>
+                    <li>Que se ajuste el contenido es con <code>min-content</code> y <code>max-content</code>.</li>
+                </ul>
+                <ul>
+                    (Generalmente se ponen en el Repeat:)
+                    <li>minmax()
+                        <ul>
+                            <li>Nos permite especificar lo minimo y maximo que va a medir.</li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(3, minmax(100px, 300px));</code>
+                            </li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(3, minmax(120px, 1fr));</code>
+                            </li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(3, minmax(min-content, max-content));</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>min-content
+                        <ul>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(3, min-content);</code> va a hacer que la columna ahora
+                                valga su minimo contenido (no se achicará más que la palabra mas grande).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>max-content
+                        <ul>
+                            <li>No se usa mucho, pero existe la posibilidad.</li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(3, max-content);</code> va a hacer que la columna ahora
+                                valga su maximo contenido (la oración entera).
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <h6>Cantidad:</h6>
+                    <li>Se usan mucho para hacer galerias.</li>
+                    <li>auto-fill
+                        <ul>
+                            <li>Que la grilla siga generando columnas y/o filas.</li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));</code> <br>
+                                Grilla 3
+                                (Grilla con auto-fill)
+                                <code>
+                                    <p>
+                                        .grid-container3 {
+                                        display: grid;
+                                        border: 3px solid black;
+                                        grid-template-rows: repeat(3, 100px);
+                                        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                                        grid-auto-rows: 1fr;
+                                        grid-auto-columns: 1fr;
+                                        grid-auto-flow: dense;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item3 {
+                                            border: 1px solid black;
+                                            background-color: bisque;
+                                        }                                
+                                    </p>
+                                </code>
+                                <div class="grid-container3">
+                                    <div class="grid-item3">1</div>
+                                    <div class="grid-item3">2</div>
+                                    <div class="grid-item3">3</div>
+                                    <div class="grid-item3">4</div>
+                                    <div class="grid-item3">5</div>
+                                    <div class="grid-item3">6</div>
+                                    <div class="grid-item3">7</div>
+                                    <div class="grid-item3">8</div>
+                                    <div class="grid-item3">9</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>auto-fit
+                        <ul>
+                            <li>Que la grilla se ajuste.</li>
+                            <li>
+                                Ej: <code>grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));</code> <br>
+                                Grilla 3
+                                (Grilla con auto-fill)
+                                <code>
+                                    <p>
+                                        .grid-container4 {
+                                        display: grid;
+                                        border: 3px solid black;
+                                        grid-template-rows: repeat(3, 100px);
+                                        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                                        grid-auto-rows: 1fr;
+                                        grid-auto-columns: 1fr;
+                                        grid-auto-flow: dense;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item4 {
+                                            border: 1px solid black;
+                                            background-color: bisque;
+                                        }                                
+                                    </p>
+                                </code>
+                                <div class="grid-container4">
+                                    <div class="grid-item4">1</div>
+                                    <div class="grid-item4">2</div>
+                                    <div class="grid-item4">3</div>
+                                    <div class="grid-item4">4</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <h6>Alineacion y Control de Flujo</h6>
+                    <ul>
+                        <li>
+                            A diferencia de Flexbox la alineacion es dentro de una celda y no la total del flex-container
+                        </li>
+                        <li>Cada celda es un "flex-container"</li>
+                        <li>Tenemos 2 tipos de alineacion: a todos los items (se aplica al contenedor), la alineacion de columnas y filas (se aplica al contenedor), y la alineacion particular con el elemento individual.</li>
+                        <li>Las transiciones no van muy bien (se trabajan de otra forma)</li>
+                    </ul>
+                    <h6>Propiedades del Grid Container</h6>
+                    <ul>
+                        <li>Justify-items (horizontal)
+                            <ul>
+                                <li>Como el justify-content de flexbox</li>
+                                <li>A diferencia de Flexbox todas las cajas de adentro tambien adquieren ese comportamiento.</li>
+                            </ul>
+                        </li>
+                        <li>Align-Items (vertical)</li>
+                        <li>Place-Items</li>
+                        <li>stretch (default) / start / center / end
+                            <ul>
+                                <li>poner algo como "flex-start" funciona de la misma manera que "start".</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                    Grilla 5: <br>
+                    (Grilla con justify-items, align-items, y un poco de padding en las celdas)
+                                <code>
+                                    <p>
+                                        .grid-container5 {
+                                            display: grid;
+                                            border: 3px solid black;
+                                            grid-template-rows: repeat(3, 100px);
+                                            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                                            grid-auto-rows: 1fr;
+                                            grid-auto-columns: 1fr;
+                                            grid-auto-flow: dense;
+                                            justify-items: center;
+                                            align-items: center;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item5 {
+                                            border: 1px solid black;
+                                            background-color: bisque;
+                                            padding: 30px;
+                                        }                             
+                                    </p>
+                                </code>
+                    <div class="grid-container5">
+                        <div class="grid-item5">1</div>
+                        <div class="grid-item5">2</div>
+                        <div class="grid-item5">3</div>
+                        <div class="grid-item5">4</div>
+                        <div class="grid-item5">5</div>
+                        <div class="grid-item5">6</div>
+                        <div class="grid-item5">7</div>
+                        <div class="grid-item5">8</div>
+                        <div class="grid-item5">9</div>
+                    </div>
+                    <br>
+                    <h6>Filas y Columnas</h6>
+                    <ul>
+                        <li>Justify-Content (columnas)
+                            <ul>
+                                <li>Las columnas al comienzo o al final.</li>
+                                <li>Se nota mas si nuestas filas tienen una medida fija como 100px (no 1fr), y el container tiene un height mayor del total, como 600px.</li>
+                            </ul>
+                        </li>
+                        <li>Align-Content (filas)
+                            <ul>
+                                <li>Para ubicarlo verticalmente</li>
+                                <li>Ej: <code>align-content: center;</code> no hace nada porque ya estan centradas.</li>
+                                <li>Se nota mas si no es flexible (no mide 1fr).</li>
+                            </ul>
+                        </li>
+                        <li>stretch (default) / start / center / end</li>
+                        <li>+ las de flexbox
+                            <ul>
+                                <li>space-around</li>
+                                <li>space-between</li>
+                                <li>space-evenly</li>
+                                <li>(Estos no los pueden recibir los items, solo el container)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br>
+                    Grilla 6: <br>
+                    (Grilla con justify-content, align-content, justify-items, y align-items)
+                                <code>
+                                    <p>
+                                        .grid-container6 {
+                                            display: grid;
+                                            border: 3px solid black;
+                                            grid-template-rows: repeat(3, 100px);
+                                            grid-template-columns: repeat(3, 100px);
+                                            grid-auto-rows: 1fr;
+                                            grid-auto-columns: 1fr;
+                                            grid-auto-flow: dense;
+                                            height: 400px;
+                                            justify-content:end;
+                                            align-content:end;
+                                            justify-items: center;
+                                            align-items: center;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item6 {
+                                            border: 1px solid black;
+                                            background-color:limegreen;
+                                            padding: 20px;
+                                            font-size: 20px;
+                                        }            
+                                    </p>
+                                </code>
+                    <div class="grid-container6">
+                        <div class="grid-item6">1</div>
+                        <div class="grid-item6">2</div>
+                        <div class="grid-item6">3</div>
+                        <div class="grid-item6">4</div>
+                        <div class="grid-item6">5</div>
+                        <div class="grid-item6">6</div>
+                        <div class="grid-item6">7</div>
+                        <div class="grid-item6">8</div>
+                        <div class="grid-item6">9</div>
+                    </div>
+                    <br>
+                    <h6>Aplicado al Grid Item</h6>
+                    (a lo anterior, en el container, le puedo modificar los items)
+                    <ul>
+                        <li>align-self</li>
+                        <li>justify-self</li>
+                        <li>place-self (shorthand)
+                            <ul>
+                                <li><code>place-self: align-self justify-self;</code></li>
+                                <li>Ej: <code>place-self: end start;</code></li>
+                            </ul>
+                        </li>
+                        <li>Valores: stretch (default) / start / center / end</li>
+                        <li>Order
+                            <ul>
+                                <li>Igual que en Flexbox</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    Grilla 7: <br>
+                    (Grilla con align-self y justify-self)
+                                <code>
+                                    <p>
+                                        .grid-container7 {
+                                            display: grid;
+                                            border: 3px solid black;
+                                            grid-template-rows: repeat(3, 1fr);
+                                            grid-template-columns: repeat(3, 1fr);
+                                            grid-auto-rows: 1fr;
+                                            grid-auto-columns: 1fr;
+                                            grid-auto-flow: dense;
+                                            height: 400px;
+                                            justify-items: center;
+                                            align-items: center;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7 {
+                                            border: 1px solid black;
+                                            background-color:darkorchid;
+                                            color: white;
+                                            padding: 30px;
+                                            font-size: 20px;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7:first-child {
+                                            align-self: start;
+                                            justify-self: start;
+                                            background: hsl(290, 100%, 30%);
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7:nth-child(3) {
+                                            align-self: start;
+                                            justify-self: end;
+                                            background: hsl(290, 100%, 30%);
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7:nth-child(5) {
+                                            background: hsl(270, 60%, 65%);
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7:nth-child(7) {
+                                            align-self: end;
+                                            justify-self: start;
+                                            background: hsl(290, 100%, 30%);
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item7:last-child {
+                                            align-self: end;
+                                            justify-self: end;
+                                            background: hsl(290, 100%, 30%);
+                                        }          
+                                    </p>
+                                </code>
+                    <div class="grid-container7">
+                        <div class="grid-item7">1</div>
+                        <div class="grid-item7">2</div>
+                        <div class="grid-item7">3</div>
+                        <div class="grid-item7">4</div>
+                        <div class="grid-item7">5</div>
+                        <div class="grid-item7">6</div>
+                        <div class="grid-item7">7</div>
+                        <div class="grid-item7">8</div>
+                        <div class="grid-item7">9</div>
+                    </div>
+                    <br>
+                    Grilla 8: <br>
+                    (Grilla con order)
+                                <code>
+                                    <p>
+                                        .grid-container8 {
+                                            display: grid;
+                                            border: 3px solid black;
+                                            grid-template-rows: repeat(3, 100px);
+                                            grid-template-columns: repeat(3, 100px);
+                                            grid-auto-rows: 1fr;
+                                            grid-auto-columns: 1fr;
+                                            grid-auto-flow: dense;
+                                            justify-items: center;
+                                            align-items: center;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item8 {
+                                            border: 1px solid black;
+                                            background-color:darkblue;
+                                            color: white;
+                                            padding: 20px;
+                                            font-size: 20px;
+                                        }
+                                    </p>
+                                    <p>
+                                        .grid-item8:first-child {
+                                            border: 1px solid black;
+                                            background-color:blue;
+                                            order: 3;
+                                        }
+                                    </p>
+                            </code>
+                <div class="grid-container8">
+                    <div class="grid-item8">1</div>
+                    <div class="grid-item8">2</div>
+                    <div class="grid-item8">3</div>
+                    <div class="grid-item8">4</div>
+                    <div class="grid-item8">5</div>
+                    <div class="grid-item8">6</div>
+                    <div class="grid-item8">7</div>
+                    <div class="grid-item8">8</div>
+                    <div class="grid-item8">9</div>
+                </div>
+                <br>
+            </section>
+            <br>
+            <section>
+                <!-- Practica 1 con Grid (Galeria) -->
+                <h6 id="grid-example1">Practica 1 con Grid</h6> (Galeria)
+                <br> Image grid <!-- Image grid Layouts -->
+                <ul>
+                    <li>Let's try something different with a grid of images where we have a big image and a few thumbnails beside it (or under it).</li>
+                    <li>We have two grid configurations (big image on top, and big image on the left). All I am doing is this: 
+                        <code>.grid img:first-child { grid-area: span 3 / span 3; }</code>
+                    </li>
+                    <li>grid-area is a shorthand property that combines the following properties into a single declaration: grid-row-start, grid-row-end, grid-column-start, grid-column-end
+                    </li>
+                    <li>Isn't grid-area the property we use to define named areas? Yes, but we could write a whole lot more about grid-area, but in this particular case: <br>
+                        <code>.grid img:first-child { grid-area: span 3 / span 3; }</code> <br>
+                        <code>/* ...is equivalent to: */ <br>
+                            .grid img:first-child { grid-row-start: span 3; grid-column-start: span 3; grid-row-end: auto; grid-column-end: auto; }</code>
+                    </li>
+                    <li>This means that the first image element in the grid needs to span three columns and three rows. Since we didn't define any columns or rows, the browser does it for us. We've essentially placed the first image in the HTML to take up a 3⨉3 grid. That means that any other images will be placed automatically in those same three columns without the need to specify anything new.</li>
+                    <li>As a result, the remaining images in the HTML flow right into place using the same three columns and rows. And since the first image takes up all three columns in the first row, the remaining images flow into additional rows that each contain three columns, where each image takes up a single column.</li>
+                    <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656628687145_image.png" alt="Gallery with top big img"></li>
+                    <li>For the second grid configuration (the big image on the left), all I've done is change the automatic flow direction using grid-auto-flow: column the same way we did earlier when placing an &lt;aside&gt; element next to a &lt;section&gt;.</li>
+                    <li>This forces the browser to create a fourth column it can use to place the remaining images. And since we have three rows, the remaining images get placed inside the same vertical column.</li>
+                    <li>We need to add a few properties to the images to make sure they fit nicely inside the grid without any overflow: 
+                        <ul>
+                            <li><code>
+                                .grid { display: grid; grid-gap: 10px; }
+                                <br><br>
+                                /* for the second grid configuration */ <br>
+                                .horizontal { grid-auto-flow: column; }
+                                <br><br>
+                                /* The large 3⨉3 image */ <br>
+                                .grid img:first-child { grid-area: span 3 / span 3; }
+                                <br><br>
+                                /* Help prevent stretched or distorted images */ <br>
+                                img { width: 100%; height: 100%; object-fit: cover; }
+                            </code></li>
+                        </ul>
+                    </li>
+                    <li>We can easily update the grid to consider more images by adjusting one value. That would be the 3 in the styles for the large image.</li>
+                    <li>But we could add a fourth column simply by changing it to 4 instead: <br>
+                    <code>.grid img:first-child { grid-area: span 4 / span 4; }</code></li>
+                    <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656628884092_image.png" alt="Gallery with left big image"></li>
+                    <div class="practica-grid-1">
+                        Big Img on top:
+                        <div class="grid">
+                            <img src="https://picsum.photos/id/237/400/200">
+                            <img src="https://picsum.photos/id/237/400/200">
+                            <img src="https://picsum.photos/id/237/400/200">
+                            <img src="https://picsum.photos/id/237/400/200">
+                        </div>
+                        Big Img on the left:
+                        <div class="grid horizontal">
+                            <img src="https://picsum.photos/id/1074/400/200">
+                            <img src="https://picsum.photos/id/1074/400/200">
+                            <img src="https://picsum.photos/id/1074/400/200">
+                            <img src="https://picsum.photos/id/1074/400/200">
+                        </div>
+                    </div>
+                    <br>
+                    <li>
+                        <ul style="display: grid; grid-template-columns: 1fr 1fr;"><!-- Dynamics Pattern Layouts -->
+                            Dynamics Pattern Layouts: <br>
+                            <a href="https://css-tricks.com/useful-nth-child-recipies/">(CSS Tricks) Useful :nth-child Recipes</a>
+                            <li>
+                            <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656668565317_image.png" alt="">
+                            <ul>
+                                <li>
+                                    We configure each element so that:
+                                    <ul>
+                                        <li>The first element needs to take two columns and start at column one (grid-column: 1/span 2).</li>
+                                        <li>The second element is placed in the third column (grid-column-start: 3).</li>
+                                        <li>The third element is placed at the first column: (grid-column-start: 1).</li>
+                                        <li>The fourth element takes two columns and starts at the second column: (grid-column: 2/span 2).</li>
+                                    </ul>
+                                </li>
+                                <li>in CSS: <br>
+                                    <code>
+                                        .grid { display: grid; grid-auto-columns: 1fr; /* all the columns are equal */ grid-auto-rows: 100px; /* all the rows are equal to 100px */ } <br>
+                                        .grid :nth-child(4n + 1) { grid-column: 1/span 2; } <br>
+                                        .grid :nth-child(4n + 2) { grid-column-start: 3; } <br>
+                                        .grid :nth-child(4n + 3) { grid-column-start: 1; } <br>
+                                        .grid :nth-child(4n + 4) { grid-column: 2/span 2; }
+                                    </code>
+                                </li>
+                                <li>We can remove some declarations and rely grid's auto-placement powers. This is the trickiest part and requires a lot of practice to be able to identify what can be removed.</li>
+                                <li>We can update grid-column: 1 /span 2 and use only grid-column: span 2</li>
+                                <li>By placing the first, second, and fourth items, the grid automatically places the third item in the correct place.</li>
+                                <li>We can remove: <br>
+                                <code>
+                                    .grid :nth-child(4n + 3) { grid-column-start: 1; }</code>
+                                    <br>and<br>
+                                    <code>.grid :nth-child(4n + 2) { grid-column-start: 3; }
+                                </code></li>
+                                <li><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656669552703_image.png" alt=""></li>
+                                <li>If we place the fourth element in the second column while allowing it to take up two full columns, we're forcing the grid to create a third implicit column, giving us a total of three columns without explicitly telling it to. The fourth element cannot go into the first row since the first item is also taking two columns, so it flows to the next row. This configuration leave us with an empty column in the first row and an empty one in the second row.</li>
+                                <li>The browser will automatically place the second and third items in those empty spots. So our code becomes even simpler. All it takes is five declarations to create a very cool and very flexible pattern. Why not use grid-template-columns to define explicit columns? We can do that: <br>
+                                    <code>.grid { display: grid; grid-template-columns: repeat(3, 1fr); /* all the columns are equal */ grid-auto-rows: 100px; /* all the rows are equal to 100px */ }
+                                        <br>
+                                        .grid :nth-child(4n + 1), .grid :nth-child(4n + 4) { grid-column: span 2; }
+                                    </code>
+                                </li>
+                                <li>The code is definitely more intuitive. We define three explicit grid columns and we tell the browser that the first and fourth elements need to take two columns. The explicit approach is more straightforward, while an implicit grid requires you to "fill in the gaps" where CSS is doing additional work behind the scenes.</li>
+                            </ul>
+                        </li>
+                        <li>
+                        <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656673113922_image.png" alt="">
+                        <ul>
+                            <li>The items in black are implicitly placed in the grid. You might want to read about grid-auto-columns. It should be noted that we can get the same layout more ways than how I got there. Can you figure those out, too?</li>
+                            <li><a href="https://css-tricks.com/understanding-the-difference-between-grid-template-and-grid-auto/">Understanding the difference between grid-template and grid-auto</a></li>
+                            <li><a href="https://css-tricks.com/collection-interesting-facts-css-grid-layout/">A Collection of Interesting Facts about CSS Grid Layout</a></li>
+                            <li>I am gonna leave you with a last pattern:</li>
+                        </ul>
+                        <br>
+                        <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/07/s_F4C924AEFDB642C9861B01422787157264225531682D164A8C42B48A83B84E89_1656674978920_image.png" alt=""></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="practica-grid-1">
+                    
+                </div>
+                <br>
+                <!-- Practica 2 con Grid (Galeria) -->
+                <h6 id="grid-example2">Practica 2 con Grid</h6> (Galeria)
+                <div class="grid-example2">
+                    <div class="practica-grid-2">
+                        <img src="img/guitarra.png" alt="guitarra">
+                        <img src="https://picsum.photos/id/237/400/200" alt="puppy">
+                        <img src="img/taxonomy Screen Shot 2021-08-30 at 20.45.34.png" alt="taxonomy of players">
+                        <img src="img/coffee.png" alt="coffee">
+                        <img src="img/taxonomy of player types Bartle (385px-Character_theory_chart).png" alt="taxonomy of players">
+                        <img src="img/old_lock_hires-designerspics.jpeg" alt="locks">
+                        <img src="img/taxonomy Screen Shot 2021-08-30 at 20.44.59.png" alt="taxonomy of players">
+                        <img src="img/monster.png" alt="monster drawing">
+                        <img src="https://picsum.photos/id/1074/400/200" alt="lioness">
+                        <img src="img/WhatsApp Image 2022-11-14 at 14.23.28.jpeg" alt="full stack">
+                        <img src="img/Under Construction.png" alt="unde construction">
+                        <img src="img/taxonomy Screen Shot 2021-08-30 at 16.54.00.png" alt="taxonomy of players">
+                        <img src="img/pexels-rachel-claire-5863561.jpeg" alt="adventuring items">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h4>Frameworks</h4>
+        <br>
+        <h5 id="boot-strap">Bootstrap</h5>
+        <div>
+            
+        </div>
+        <br>
+        <h5 id="tail-wind">Tailwind</h5>
+        <div>
+
+        </div>
+        <br>
+        <h5 id="w3-css">W3 CSS</h5>
+        <div>
+
+        </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h4>Pre-Processors</h4>
+        <br>
+        <h5 id="sass">SASS</h5>
+        <div>
+            
+        </div>
+        <br>
+        <h5 id="less">LESS</h5>
+        <div>
+
+        </div>
+        <br>
+        <h5 id="stylus">STYLUS</h5>
+        <div>
+
+        </div>
+    </section>
+
+    <br><br><br><hr><br><br><br>
+
+    <footer>
+        <br>
+        <br>
+        Footer :)
+        <br>
+        <br>
+    </footer>
+</body>
+</html>
