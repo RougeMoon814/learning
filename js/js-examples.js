@@ -17,12 +17,12 @@ console.log("La suma de 1 mas 5 es: " + resultado); */
 
 function funcion1() {
     console.log("Capturamos el evento click (externo 1)"); //esto aparecerá en la consola cuando presionemos el botón
-    document.getElementById('demo1').innerHTML = "Hemos cambiado el contenido del HTML (este botón si conecta con un archivo js externo)";
+    document.getElementById('demo1').innerHTML = "Este botón si conecta con un archivo js externo, pero parte es inline porque el <code>&lt;script&gt;</code> del JS está en el head HTML";
 }
 //ojo no poner "onCLick", es "onclick".
 document.getElementById('boton3').onclick = function funcion3() {
     console.log("Capturamos el evento click otra vez (externo 2)"); //esto aparecerá en la consola cuando presionemos el botón
-    document.getElementById('demo1').innerHTML = "Contenido del HTML cambiado";
+    document.getElementById('demo1').innerHTML = "Este botón conecta con un JS externo. El <code>&lt;script&gt;</code> del JS va al final del <code>&lt;body&gt;</code> HTML";
 }
 
 
@@ -46,7 +46,7 @@ document.getElementById('jstrigger2').onclick = function funcion(){
 
 //Este no andaba pero ahora si (agregué el tag script que conecta nuestro js externo al final del body del HTML)
 document.getElementById('boton2').addEventListener('click', function() {
-    document.getElementById('demo1').innerHTML = "cambio el contenido del HTML desde EventListener";
+    document.getElementById('demo1').innerHTML = "El EventListener es similar al botón anterior pero me permite tener multiples eventos de JS (por lo que es mas versatil que un onclick, por ejemplo).";
     console.log("Hola Mundo desde EventListener");
 });
 

@@ -1,0 +1,36 @@
+/* CSS for JavaScript Examples */
+
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.link-block li, 
+footer li {
+    list-style-type: none;
+}
+
+.right img {
+    position:relative;
+    float:inline-end;
+    z-index: 15;
+}
+
+
+/* Sidebar links */
+.left a {
+    display: block;
+    padding: 5px;
+}
+/* Sidebar dropdown */
+    .left .link-block {
+    display: none;
+}
+.left .sidebar-dropdown {
+outline: 2px solid #ccc;
+}
+
+.left .sidebar-dropdown:hover .link-block,
+.left .sidebar-dropdown:active .link-block {
+    display: block;
+}
