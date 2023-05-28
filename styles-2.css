@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: gainsboro;
+    background-color: gray;
     /* The Background color on the sides. Should be a neutral color (or maybe a subtle background image). */
     
     overflow-x: hidden;
